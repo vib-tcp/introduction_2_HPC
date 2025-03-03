@@ -1,4 +1,4 @@
-# HPC Training Bio-imaging 
+# Introduction to HPC
 
 > This material in under active development at the moment
 
