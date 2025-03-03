@@ -1,9 +1,7 @@
-
-
 <!--
 
 author:   Tatiana Woller, Bruna Piereck, Alexander Botzki
-email:    training@vib.de
+email:    trainingandconferences@vib.be
 version:  1.0.0
 language: en
 narrator: UK English Female
