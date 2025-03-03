@@ -1,7 +1,7 @@
 <!--
 
 author:   Tatiana Woller, Bruna Piereck, Alexander Botzki
-email:    training@vib.de
+email:    trainingandconferences@vib.be
 version:  1.0.0
 language: en
 narrator: UK English Female
@@ -26,20 +26,20 @@ link:     https://raw.githubusercontent.com/vibbits/material-liascript/master/vi
 
 @orcid: [@0](@1)<!--class="orcid-logo-for-author-list"-->
 
-# Bioimage analysis on HPC
+# Introduction to HPC usage
 
 > This material in under active development at the moment
 
 **Hello and welcome to our HPC workshop, we are very happy to have you here!** 
 ================================================================================
-**This workshop is jointly organised by the VIB Technologies and VIB Bioimaging Core.**
+**This material is derived from ["HPC training Bio-imaging"](https://liascript.github.io/course/?https://raw.githubusercontent.com/vib-bic-training/HPC_training_bioimaging_1/refs/heads/main/README.md#1)**
 ========================================================================================
 
 > This materia is a distributed way of creating and sharing educational content hosted on github.
 > To see this document as an interactive LiaScript rendered version, click on the
 > following link/badge:
 >
-> [![LiaScript](https://raw.githubusercontent.com/LiaScript/LiaScript/master/badges/course.svg)](https://liascript.github.io/course/?https://raw.githubusercontent.com/tatianawoller/Training_prep_290524/main/overview.md?token=GHSAT0AAAAAACM5JJ7CACQBVWAOQOVXRGNWZOCHBHA#1)
+> [![LiaScript](https://raw.githubusercontent.com/LiaScript/LiaScript/master/badges/course.svg)](https://liascript.github.io/course/?link)
 
 <section>
 
@@ -51,12 +51,8 @@ link:     https://raw.githubusercontent.com/vibbits/material-liascript/master/vi
 > <i class="fa fa-arrow-left"></i> **Prerequisites**  
 > To be able to follow the **General** HPC course, you should:
 > 
-> 1. Have notions of command line and scripting
-> 2. Be comfortable working with remote desktop
->
-> To be able to follow the **Bioimaging** HPC course, you should:
->
-> 1. Knowledge of image analysis 
+> 1. Have notions of command line in Unix-based system
+> 2. Have a VSC account
 >
 > <i class="fa fa-arrow-right"></i> **Learning Outcomes (LO's):**  
 > 
@@ -66,34 +62,31 @@ link:     https://raw.githubusercontent.com/vibbits/material-liascript/master/vi
 >
 >> - **General LO's**
 >> 
->> 1. Explain the (potential) use of scientific high-performance computing
->> 2. Learn how to access existing supercomputer infrastructures in Flanders (VSC)
->> 2. Know the different environments they can use in the VSC to store, analysis and debug
->> 3. Find and use modules that are available in the VSC for their analysis
->> 4. Create and adapting scripts to run jobs and check information based on the submission method
+>> 1. Describe differences and similarities among HPC Tiers and usage.
+>>
+>> 2. Access existing HPC infrastructures in Flanders such as VSC and VIB Data Core
+>>
+>> 3. Use the different evironments in the HPC (storage, analysis, debug)
+>>
+>> 4. Querying and using modules and its versions in the HPC
+>>
+>> 5. Submit jobs to use softwares and scripts on the cluster 
+>>
+>> 6. Check information about submitted jobs
 >
 >**Target Audience:** Scientific staff, trainers, training providers
 >
->> - **Bioimaging Specific LO's:**  
->>
->> 1. Discuss how scientific high-performance computing enables to scale up bioimage analysis and opens new avenues for research>
->> 1. Identify which online and reusable resources are available for your Bioimaging problem (i.e., bioimage model zoo or other resources)
->> 2. Run image analysis jupyter notebook and dedicated software's through Open On Demand
->> 3. Discuss how to improve reproducibility in image analysis
 >
->**Target Audience:** Bioimaging Researchers and technical support, trainers, training providers
-
 > <i class="fa fa-hourglass"></i> **Time estimation General session**: 1/2 day 
 >
-> <i class="fa fa-hourglass"></i> **Time estimation General session + Bioimaging**: 1 day 
-
+> <i c
 <i class="fa fa-lock"></i> **License:** 
 
 <img src="https://raw.githubusercontent.com/vibbits/rdm-course-2022/main/images/logos/CC-by.png" title="" alt="" width="143">
 
 [**Creative Commons Attribution 4.0 International  License**](https://creativecommons.org/licenses/by/4.0/)
 
-<i class="fa fa-money-bill"></i> **Funding:**  ....
+<i class="fa fa-money-bill"></i> **Funding:**  
 
 <i class="fa fa-asterisk"></i> **General Requirements (Technical):** 
 
@@ -103,14 +96,11 @@ You can find here a list of technical details you need to get prepared in oder t
  - Create and enable SSH key
  - Globus
 
-<i class="fa fa-asterisk"></i> **Bioimaging Requirements (Technical):** 
-
- - Experience in image analysis
-
 <i class="fa fa-life-ring"></i> **Acknowledgement**: 
 
  * [ELIXIR Belgium](https://www.elixir-belgium.org/)
  * [VIB Technologies](https://www.vib.be/)
+ * [VIB Training & Conferences](https://www.vibtrainingandconferences.be/#/)
 
 <i class="fa fa-anchor"></i> **PURL**: to be added 
 
@@ -123,7 +113,7 @@ You can find here a list of technical details you need to get prepared in oder t
 
 ### Contributors
 
-Part of this training was reused from the [NextFlow](https://github.com/vibbits/nextflow-workshop) course from VIB/ELIXIR-BE session.
+Part of this training was reused from the ["HPC training Bio-imaging"](https://liascript.github.io/course/?https://raw.githubusercontent.com/vib-bic-training/HPC_training_bioimaging_1/refs/heads/main/README.md#1)
 
 ### Citing this lesson
 
@@ -137,15 +127,8 @@ Schedule day 1:
 
 | Time | Session |
 |  --- |   ---   |
-| 09:30 - 11:00 | Introduction  and HPC infrastructure |
-| 11:00 - 11:15 | break   |
-| 11:15 - 12:45 | HPC infrastructure and Data transfer |
-| 12:45 - 13:15 | lunch   |
-| 13:15 - 15:00 | Napari and Napari plugins |
-| 15:00 - 15:15 | break   |
-| 15:15 - 16:00 | Napari plugins, Cellpose, QuPath |
-| 16:00 - 16:30 | Jupyter notebook |
-| 16:30 - 17:00 | Conclusion and outlook|
-_We aim to complete up to and including exercise 2.5 during this day_
+| 09:00 - 10:45 | First part  |
+| 10:45 - 11:00 | break       |
+| 11:00 - 12:30 | Second part |
 
 </section>
