@@ -46,13 +46,14 @@ link:     https://raw.githubusercontent.com/vibbits/material-liascript/master/vi
 ### Lesson overview
 
 > <i class="fa fa-bookmark"></i> **Description**  
-> This is our interactive hands-on course about the use of HPC (High Performance Computing).
+> This is our interactive hands-on course about the use of HPC (High Performance Computing). Here you will learn about different HPC structures, their simmilarities and specificities. You will learn best practices to submit and have good registry of your 'jobs' and to check the list of available softaware. The aim is that understanding the building blocks your are not only able to use the VSC and VIB resources, but can easily adapt whenever facing another instace of HPC.
 > 
 > <i class="fa fa-arrow-left"></i> **Prerequisites**  
 > To be able to follow the **General** HPC course, you should:
 > 
 > 1. Have notions of command line in Unix-based system
 > 2. Have a VSC account
+> Check the [Get ready chapter] to know more about this.
 >
 > <i class="fa fa-arrow-right"></i> **Learning Outcomes (LO's):**  
 > 
