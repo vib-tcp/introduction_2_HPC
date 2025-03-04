@@ -26,7 +26,40 @@ link:     https://raw.githubusercontent.com/vibbits/material-liascript/master/vi
 
 @orcid: [@0](@1)<!--class="orcid-logo-for-author-list"-->
 
+
+# WHat is a High-Performance Computing system ?
+
+A HPC brings together several technologies such as computer architecture, algorithms, programs and electronics, and system software to solve advanced problems effectively and quickly.
+It offers a reliable, efficient and very quick way to run advanced analysis in parallel and can be used by several disciplines.
+
+Among the technologies intergated in a HPC system it can include
+
+**High-end compute nodes:** multicore processors.
+
+**Fast interconnect:** multiple processor cores work together through parallel processing. Fast connections between the nodes are necessary to make quick data exchange possible.
+
+**Parallel shared filesystem:** the compute nodes are connected to a shared filesystem for storing input data, temporary data, and final calculation results.
+
+**High-memory nodes:** some nodes are equipped with lots of RAM memory, mitigating low disk reads impacting analysis that generate large amounts of intermediary results.
+
+**GPU (Graphical processing units) nodes:** are specialized processors, ideally suited for higly demanding data processing tasks.
+
+
 # Infrastructure
+
+The european model for HPC classifies that different offers in HPC resource and accessibility in different levels called **Tiers**.
+
+* Tier-0 clusters are 
+
+* Tier-1 clusters are 
+
+* Tier-2 clusters are
+
+* Tier-3 is representing your personal computer, can be a desktop or a laptop. But is mainly for personal use and has limited resources.
+
+
+<center><img src="../images/..." width="300"/></center>
+
 
 ## OOD on the VSC
 ### Tier 2 KUL
@@ -41,33 +74,8 @@ link:     https://raw.githubusercontent.com/vibbits/material-liascript/master/vi
 - How to connect: https://tier1.hpc.ugent.be/ 
 - Which services are available: BAND, Neurodesk, Cluster Desktop, Shell, Jupyter Notebook, RStudio, Jupyter Lab, VS Code Tunnel
   
-## BAND
-Bioimage Analysis Desktop is a virtual desktop developed by EMBL where software (cellpose, omnipose, fiji, cellprofiler and qupath, napari) are installed as containers.
-![image](https://github.com/vib-bic-training/HPC_training_bioimaging_1/assets/103046100/ec5c0fd3-b142-45c2-b241-a3baf84a449f)
-
-It can be accessed through a webinterface and is ideal for training
-How to launch BAND:
-![Screenshot 2024-05-31 143602](https://github.com/vib-bic-training/HPC_training_bioimaging_1/assets/103046100/cd52179f-08c1-4fec-9c15-d7b6157628ec)
-![Screenshot 2024-05-31 143756](https://github.com/vib-bic-training/HPC_training_bioimaging_1/assets/103046100/c8147424-9bbd-4aa5-bbc6-5b2234766a77)
-Contact us if you have any doubt with the specification you need to feel in
 
 
-
-## Neurodesk
-
-Virtual desktop for data analysis in neuroimaging and it can be launched in a similar way than BAND.
-![image](https://github.com/vib-bic-training/HPC_training_bioimaging_1/assets/103046100/a9536c03-747e-46e7-a402-f4724248de78)
-
-Interesting notebook or tutorials are:
-- https://www.neurodesk.org/tutorials-examples/tutorials/
-- [GitHub - NeuroDesk/example-notebooks: examples for using Neurodesk within Notebooks](https://github.com/NeuroDesk/example-notebooks)
-For instance, slicer, vesselvio and ilastik are installed on neurodesk
-
-To start Neurodesk:
-![image](https://github.com/vib-bic-training/HPC_training_bioimaging_1/assets/103046100/3e26569e-83ec-4497-a8e9-d0f55ea408ef)
-![image](https://github.com/vib-bic-training/HPC_training_bioimaging_1/assets/103046100/9283576b-b03e-4eb3-a4b9-dd64d504ae69)
-
-Feel free to contact us if you want to Neurodesk
 
 ## Jupyter Notebook
 How to run a notebook for denoising with n2v
