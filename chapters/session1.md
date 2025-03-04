@@ -406,3 +406,26 @@ For more information about modules: https://hprc.tamu.edu/kb/Software/GNU-Compil
 
 
 
+
+
+## Jupyter Notebook
+How to run a notebook for denoising with n2v
+
+![Screenshot 2024-05-31 145403](https://github.com/vib-bic-training/HPC_training_bioimaging_1/assets/103046100/7b43dd8d-508d-456b-acd3-c37aa0fb661e)
+![Screenshot 2024-05-31 143756](https://github.com/vib-bic-training/HPC_training_bioimaging_1/assets/103046100/3f532e69-7c2e-4746-8fce-2710351ec1eb)
+
+## Jupyter Lab
+
+![image](https://github.com/vib-bic-training/HPC_training_bioimaging_1/assets/103046100/184b607d-7702-447a-8874-457feb7c2e49)
+![image](https://github.com/vib-bic-training/HPC_training_bioimaging_1/assets/103046100/a44c2822-06f2-44c7-9eee-4d97f658a4b4)
+
+
+
+### How to load software for Jupyter Notebook or Jupyter Lab
+- either use easybuild module but take care with compatibility with GCC core (see software.md)
+- use own conda environment and make your own kernel but take care with compatibility with GCC core
+
+## Command-line HPC for batch processes with no GUI
+If you have a lot of images and you don't need GUI, you can run your analysis as a slurm job. Depending on the software and your type of analysis, you can use apptainer containers and nextflow pipelines. 
+
+
