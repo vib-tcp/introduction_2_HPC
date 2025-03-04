@@ -73,32 +73,41 @@ _
 >>
 >> _
 
-## Storage systems
+## Storage and Computer Nodes systems
+
+A HPC needs different types of storage to maintain the efficience of its vast and complex infrastructure. Each instace will possibly name them differently, but they have defined purposes that you need to take in account when using their environmet. On top of the filesystem, each node will have different computational powers, therefore, depending on your needs, you can choose the one that most suits you.
+
+It means that the files and storage systems in place **will vary**. Knowing this what storages, their purpose and maintanance will be important to understand ***how*** and ***where*** to keep, analyze and backup your data. Additionlly, as you probably already guessed, there is a difference if we are talking about personal use and project wise. Specific projects might request specific resources and will define who can access it.
+
+Generally is good to keep in mind that when you connect to the HPC, the area you start at is like the hall of a house, you should not keep too many things there or do tasks in this location. You will also have a long-term storage, where you can keep your data, but also not where your tasks will be done. Last you will have a temporary large storage place that can be access when using your tasks
 
 
-### UGent section of the VSC
+<!-- style="color: #7CA1CC;" --> \** Storage space for a group of users (Virtual Organisation or VO for short) in VSC can be increased significantly on request, check for [more information](https://docs.vscentrum.be/gent/tier1_hortense.html#system-specific-aspects) if you need.
 
-If for your training session you are using the [UGent section]((https://docs.vscentrum.be/gent/tier2_hardware.html) or Tier1 of the [Flemish Supercomputing Center](https://www.vscentrum.be/), it's very likely that you will be using the gpu cluster and debug cluster through the. As you can imagine this is not the only cluster you can use, but for trai is good to have an interactive session in order to understand how it is working.
 
-<!-- style="color: #7CA1CC;" --> Each section of the **VSC** has independent managing systems. 
+### VIB cluster specs
 
-It means that the files and storage systems in place **will vary**. Knowing this details will be important to understand ***how*** and ***where*** to keep , analyze and backup your data.
+To be added
 
-As you probably already guessed, there is a difference if we are talking about personal use and project wise. Specific projects might request specific resources and will define who can access it.
+### UGent instances of the VSC
 
-Overview UGent-VSC
--------------
-<!-- style="color: magenta" --> VO = virtual organization
+At the UGent system you will have 4 storages with different purposes
 
-| Tier  | Login (vscnumber) | Personal storage space | VO Storage Space |  VO Project space |
-| ------------- | ------------- | ------------- | ------------- | ------------- |
-|Tier 1 | tier1.hpc.ugent.be |yes|yes|yes|
-|Tier 2 Ghent | login.hpc.ugent.be |yes|yes|none|
 
-Clusters specifics at UGent - VSC
------------------------------------
+| Filesystem name  | Intended usage | Personal storage space | VO storage space **|
+| ------------- | ------------- | ------------- | ------------- |
+| $VSC_HOME | Home directory | 3GB (fixed) | :x: |
+| $VSC_SCRATCH | Entry point to the system |  3GB (fixed) | :x: |
+| $VSC_DATA | Long-term storage of large data files |  Depend of you account(Leuven/Gent, see above) | :x: |
+| $VSC_SCRATCH_PROJECTS_BASE/2024_300/| Temporary fast storage of ‘live’ data for calculations |  20TB | upon request |
 
-On top of the filesystem, each clusters will have different computational powers, therefore, depending on your needs, you can choose the one that most suits you.
+Tier-2 instance of UGent 
+-------------------------
+
+You can find more details about the [UGent instance](https://docs.vscentrum.be/gent/tier2_hardware.html) but we try to summarize some aspects here. Keep in mind that most updated information will be found in the links. 
+
+These are the nodes available at Tier-2 UGent and you can see tehy will vary in memory, disk space and if they have or not GPUs. I want you to pay special attention to [**donphan**](https://docs.hpc.ugent.be/Linux/interactive_debug/), this is the debug and testing node, is also the one using during training sessions.
+
 
 | Cluster name  | Memory (GiB) | Disk space  |  GPU |
 |---|---|---|---|
@@ -111,11 +120,12 @@ On top of the filesystem, each clusters will have different computational powers
 | donphan ** | 738 | 1.6 TB NVME | 1 shared NVIDIA Ampere A2 |
 | gallade | 940 | 1.5 TB NVME | - |
 
-** [debugging cluster (Used for debugging and training)](https://docs.hpc.ugent.be/Linux/interactive_debug/)
 
---------------------------------------------------------------------------
 
-#### UGent TIER 1
+Tier-1 instance of UGent
+-------------------------
+
+You can find more details about the Tier1 of the [VCS ](https://www.vscentrum.be/), but we try to summarize some aspects here. Keep in mind that most updated information will be found in the links. In the Tier-1 instace, additionally to the nodes listed bellow you can request 2 other nodes that are a combination for high demand analysis; **(1)** `cpu_rome_all` corresponds to a combination of `cpu_rome` and `cpu_rome_512`; **(2)** `gpu_rome_a100_all` corresponds to a combination of `gpu_rome_a100_40` and `gpu_rome_a100_80`.
 
 | Cluster name  | Memory (GiB) | Disk space (GB) SSD  |  GPU | GPU memory (GiB)|
 |---|---|---|---|---|
@@ -126,29 +136,9 @@ On top of the filesystem, each clusters will have different computational powers
 | gpu_rome_a100_80 | 512 | 480 | 4 NVIDIA A100  | 80 |
 | debug_rome ** | 256| 100 | 1 NVIDIA Quadro P1000 | 4|
 
-- [debugging cluster (Used for debugging and training)](https://docs.hpc.ugent.be/Linux/interactive_debug/)
-- NB: There are two additional two clusters called cpu_rome_all and gpu_rome_a100.
-- cpu_rome_all corresponds to a combination of cpu_rome and cpu_rome_512.
-- gpu_rome_a100_all corresponds to a combination of gpu_rome_a100_40 and gpu_rome_a100_80.
-****************************************************
+for more information in different partitions: [vscentrum.be general-information](https://docs.vscentrum.be/en/latest/gent/tier1_hortense.html#general-information)
 
-Filesystems specifics
----------------------------
 
-| Filesystem name  | Intended usage | Total storage space | Personal storage space | VO storage space **|
-| ------------- | ------------- | ------------- | ------------- | ------------- |
-| $VSC_HOME | Home directory, Not the entry point to the system, same as Tier2 | ? | 3GB (fixed) | :x: |
-| $VSC_SCRATCH | Entry point to the system | ? | 3GB (fixed) | :x: |
-| $VSC_DATA | Long-term storage of large data files | ? | Depend of you account(Leuven/Gent, see above) | :x: |
-| $VSC_SCRATCH_PROJECTS_BASE/2024_300/| Temporary fast storage of ‘live’ data for calculations | ? | 20TB | upon request |
-
-<!-- style="color: #7CA1CC;" --> \** Storage space for a group of users (Virtual Organisation or VO for short) can be increased significantly on request.
-
-> - Source : https://docs.vscentrum.be/gent/tier1_hortense.html#system-specific-aspects
->
-> - For more information on the different partitions: https://docs.vscentrum.be/en/latest/gent/tier1_hortense.html#general-information
-
----------------------------------------------
 
 ****************************************************
 
@@ -312,3 +302,9 @@ Credits can be obtained through various type of research projects (through unive
 
 
 
+<!-- style="color: magenta" --> VO = virtual organization
+
+| Tier  | Login (vscnumber) | Personal storage space | VO Storage Space |  VO Project space |
+| ------------- | ------------- | ------------- | ------------- | ------------- |
+|Tier 1 | tier1.hpc.ugent.be |yes|yes|yes|
+|Tier 2 Ghent | login.hpc.ugent.be |yes|yes|none|
