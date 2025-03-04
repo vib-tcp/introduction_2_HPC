@@ -58,7 +58,9 @@ The european model for HPC classifies that different offers in HPC resource and 
 * Tier-3 is representing your personal computer, can be a desktop or a laptop. But is mainly for personal use and has limited resources.
 
 
-<center><img src="../images/..." width="300"/></center>
+<img src="../images/tierEuropeanHPCsytem.svg" width="500"/>
+
+In VIB we have a centralized Compute solution, a cluster of computer that will provide multicore processors nodes with higher memory and some GPU nodes.
 
 
 ## OOD on the VSC
