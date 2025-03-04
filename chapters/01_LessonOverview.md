@@ -80,7 +80,7 @@ link:     https://raw.githubusercontent.com/vibbits/material-liascript/master/vi
 >>
 >> 6. Check information about submitted jobs
 >
->**Target Audience:** Scientific staff, trainers, training providers
+>**Target Audience:** Scientific staff, trainers, training providers, anyone that wishes to use HPC instances
 >
 >
 > <i class="fa fa-hourglass"></i> **Time estimation General session**: 1/2 day 
@@ -116,6 +116,8 @@ Part of this training was reused from the ["HPC training Bio-imaging"](https://l
 ### Citing this lesson
 
 Please cite as:
+
+> Session under developtment
 
   1. ....
 
