@@ -52,8 +52,13 @@ link:     https://raw.githubusercontent.com/vibbits/material-liascript/master/vi
 > To be able to follow the **General** HPC course, you should:
 > 
 > 1. Have notions of command line in Unix-based system
-> 2. Have a VSC account
-> Check the [Get ready chapter] to know more about this.
+>
+> <i class="fa fa-asterisk"></i> **General Requirements (Technical):** 
+> You can find here a list of technical details you need to get prepared in oder to follow this course. You can find some help on ***HOW?*** in the specific sessions in the material of this course. 
+>
+> - Create a VSC account 
+>
+> Check the [Get ready chapter](../chapters/02_GetReady4course.md) to know more about this.
 >
 > <i class="fa fa-arrow-right"></i> **Learning Outcomes (LO's):**  
 > 
@@ -88,14 +93,6 @@ link:     https://raw.githubusercontent.com/vibbits/material-liascript/master/vi
 [**Creative Commons Attribution 4.0 International  License**](https://creativecommons.org/licenses/by/4.0/)
 
 <i class="fa fa-money-bill"></i> **Funding:**  
-
-<i class="fa fa-asterisk"></i> **General Requirements (Technical):** 
-
-You can find here a list of technical details you need to get prepared in oder to follow this course. You can find some help on ***HOW?*** in the specific sessions in the material of this course. 
-
- - Create a VSC account 
- - Create and enable SSH key
- - Globus
 
 <i class="fa fa-life-ring"></i> **Acknowledgement**: 
 
