@@ -85,11 +85,36 @@ Generally is good to keep in mind that when you connect to the HPC, the area you
 <!-- style="color: #7CA1CC;" --> \** Storage space for a group of users (Virtual Organisation or VO for short) in VSC can be increased significantly on request, check for [more information](https://docs.vscentrum.be/gent/tier1_hortense.html#system-specific-aspects) if you need.
 
 
-### VIB cluster specs
+### VIB cluster 
 
-To be added
+| Filesystem name  | Intended usage | Personal storage space | VO storage space **|
+| ------------- | ------------- | ------------- | ------------- |
+
+
+| Cluster name  | Memory (GiB) | Disk space  |  GPU |
+|---|---|---|---|
+
+
+
 
 ### UGent instances of the VSC
+
+
+Tier-1 instance of UGent
+-------------------------
+
+You can find more details about the Tier1 of the [VCS ](https://www.vscentrum.be/), but we try to summarize some aspects here. Keep in mind that most updated information will be found in the links. In the Tier-1 instace, additionally to the nodes listed bellow you can request 2 other nodes that are a combination for high demand analysis; **(1)** `cpu_rome_all` corresponds to a combination of `cpu_rome` and `cpu_rome_512`; **(2)** `gpu_rome_a100_all` corresponds to a combination of `gpu_rome_a100_40` and `gpu_rome_a100_80`.
+
+| Cluster name  | Memory (GiB) | Disk space (GB) SSD  |  GPU | GPU memory (GiB)|
+|---|---|---|---|---|
+| cpu_rome | 256 | 480 | - | - |
+| cpu_rome_512| 512 | 480 | - | - |
+| cpu_milan | 256 |480| - | - |
+| gpu_rome_a100_40| 256 | 480 | 4 NVIDIA A100  | 40 |
+| gpu_rome_a100_80 | 512 | 480 | 4 NVIDIA A100  | 80 |
+| debug_rome ** | 256| 100 | 1 NVIDIA Quadro P1000 | 4|
+
+for more information in different partitions: [vscentrum.be general-information](https://docs.vscentrum.be/en/latest/gent/tier1_hortense.html#general-information)
 
 At the UGent system you will have 4 storages with different purposes
 
@@ -120,64 +145,6 @@ These are the nodes available at Tier-2 UGent and you can see tehy will vary in 
 | donphan ** | 738 | 1.6 TB NVME | 1 shared NVIDIA Ampere A2 |
 | gallade | 940 | 1.5 TB NVME | - |
 
-
-
-Tier-1 instance of UGent
--------------------------
-
-You can find more details about the Tier1 of the [VCS ](https://www.vscentrum.be/), but we try to summarize some aspects here. Keep in mind that most updated information will be found in the links. In the Tier-1 instace, additionally to the nodes listed bellow you can request 2 other nodes that are a combination for high demand analysis; **(1)** `cpu_rome_all` corresponds to a combination of `cpu_rome` and `cpu_rome_512`; **(2)** `gpu_rome_a100_all` corresponds to a combination of `gpu_rome_a100_40` and `gpu_rome_a100_80`.
-
-| Cluster name  | Memory (GiB) | Disk space (GB) SSD  |  GPU | GPU memory (GiB)|
-|---|---|---|---|---|
-| cpu_rome | 256 | 480 | - | - |
-| cpu_rome_512| 512 | 480 | - | - |
-| cpu_milan | 256 |480| - | - |
-| gpu_rome_a100_40| 256 | 480 | 4 NVIDIA A100  | 40 |
-| gpu_rome_a100_80 | 512 | 480 | 4 NVIDIA A100  | 80 |
-| debug_rome ** | 256| 100 | 1 NVIDIA Quadro P1000 | 4|
-
-for more information in different partitions: [vscentrum.be general-information](https://docs.vscentrum.be/en/latest/gent/tier1_hortense.html#general-information)
-
-
-
-****************************************************
-
-           {{1}}
-****************************************************
-
-Check the quota
----------------------
-
-<!-- style="color: magenta" 
-#### UGent TIER 1
-
-`my_dodrio_quota`
-
-```
-Userquota:
-Disk quotas for prj 2534840 (pid 2534840):
-     Filesystem    used   quota   limit   grace   files   quota   limit   grace
-        /dodrio  1.709G   2.85G      3G       -   24566  1048576 1048576       -
-
-Quota for project gpr_compute_2024_300:
-Disk quotas for prj 2641240 (pid 2641240):
-     Filesystem    used   quota   limit   grace   files   quota   limit   grace
-        /dodrio   15.4T     19T     20T       -  739564  1048576 1048576       -
-```
-
-On Tier1, `my_dodrio_quota` give the space available on the `$VSC_SCRATCH` (first result) and on the one on our project (in that case `/dodrio/scratch/projects/2024_300/`)
-
----------------------------------------------------------
-
-****************************************************
-
-#### UGent TIER 2
-
- `show_quota` or go to https://account.vscentrum.be for a general overview
-
-           {{0}}
-****************************************************
-
 Filesystems specifics
 ---------------------------
 
@@ -191,28 +158,28 @@ Filesystems specifics
 
 Source : https://docs.vscentrum.be/en/latest/gent/tier2_hardware.html?highlight=VSC_DATA#shared-storage
 
-----------------------------------------------
-
-********************************************************************************
-
 ### KULeuven section of the VSC
 
-If for your training session you are using the [KULeuven section](https://docs.vscentrum.be/leuven/genius_quick_start.html#access-to-the-cluster) of the [Flemish Supercomputing Center](https://www.vscentrum.be/), it's very likely that your group is in a list of people with priorities for a reserved cluster. As you read this you can imagine that there is not only cluster option you can use. Different clusters will have different computational powers, therefore, depending on what you will do you can choose the one that most suits you.
+If you need to use the KULeuven instance of the [VSC](https://www.vscentrum.be/), it's most likely need to be part of a group which has credits to use the resources. If it is part of a traning they need to include you in their list, in this case you use traning credits and has priorities in the reserved cluster. 
 
-Overview KULeuven-VSC 
--------------
+As you already could see for the previous instances, each has different resources, for this case is not different, they have a file system and each of the two instances will have differente resources.
 
-<!-- style="color: magenta" --> To update
+Filesystems specifics
 
-
-| Tier  | Login (vscnumber) | Personal storage space | VO Storage Space |  VO Project space |
+| Filesystem name  | Intended usage | Total storage space | Personal storage space | VO storage space (*)|
 | ------------- | ------------- | ------------- | ------------- | ------------- |
-|Tier 2 Leuven | login.hpc.kuleuven.be |yes|yes| none|
+| $VSC_HOME | Home directory, entry point to the system | ? | 3GB (fixed) | :x: |
+| $VSC_DATA | Long-term storage of large data files | ? | 75GB (fixed) | :x: |
+| $VSC_SCRATCH | Temporary fast storage of ‘live’ data for calculations | ? | 500GB | ? |
 
-Clusters specifics at KULeuven - VSC
------------------------------------
+Projects and reservation for Tier-2 KU Leuven
 
-#### Tier 2 KUL Genius
+Running calculations on Tier-2 KU Leuven requires credits. New users obtained 2 millions free credits (introduction) that are valid during 6 months.
+Credits can be obtained through various type of research projects (through university, FWO, EU level). Subset of Tier-2 KUL can be reserved for research events or training events.
+
+
+Tier 2 KULeuven - Genius
+------------------------
 
 | Cluster name | Memory (GiB) | Disk space  | GPU | GPU memory (GiB)|
 |---|---|---|---|---|
@@ -223,9 +190,8 @@ Clusters specifics at KULeuven - VSC
 | GPU_v100 | 768 | 200 GB SSD | 8 NVIDIA V100 | 32|
 |amd| 256 | 200 GB SSD | - |-|
 
------------------------------------------------
-
-####  Tier 2 KUL wICE
+Tier 2 KULeuven - wICE
+-------------------
 
 | Cluster name | Memory (GiB) | Disk space  | GPU | GPU memory (GiB)|
 |---|---|---|---|---|
@@ -237,74 +203,18 @@ Clusters specifics at KULeuven - VSC
 | gpu_h100 | 768 | 960 GB SSD | 4 NVIDIA H100 | 80|
 | interactive and gpu_a100_debug | 512| 960 GB SSD | 1 NVIDIA A100 | 80 |
 
-
-           {{0}}
-****************************************************
-
-Filesystems specifics
----------------------------
-
-| Filesystem name  | Intended usage | Total storage space | Personal storage space | VO storage space (*)|
-| ------------- | ------------- | ------------- | ------------- | ------------- |
-| $VSC_HOME | Home directory, entry point to the system | ? | 3GB (fixed) | :x: |
-| $VSC_DATA | Long-term storage of large data files | ? | 75GB (fixed) | :x: |
-| $VSC_SCRATCH | Temporary fast storage of ‘live’ data for calculations | ? | 500GB | ? |
-
-<!-- style="color: magenta" --> What do we need the below info? (Bruna - check if there is the same for UGent)
-
-| Variable | Name | 
-| ------------- | ------------- |
-| $VSC_HOME | /user/leuven/30X/vsc30XYZ | 
-| $VSC_DATA | /data/leuven/30X/vsc30XYZ|
-| \$VSC_SCRATCH **or** \$VSC\_SCRATCH\_SITE | /scratch/leuven/30X/vsc30XYZ |
-| $VSC\_SCRATCH\_NODE | /local_scratch |
-
 > Source : https://docs.vscentrum.be/en/latest/leuven/tier2_hardware/kuleuven_storage.html?highlight=VSC_DATA#ku-leuven-storage
 
------------------------------------------------------------------
+## Summary
 
-****************************************************
+With this overview you should be able to observe that every HPC instace will need a file system that should have at least 3 main locations
 
-           {{1}}
-****************************************************
+1. The entripoint for you to communicate to the larger part of the system
+2. A long term storage where most of the data should be kept
+3. A low term temporary storage with more space to keep temporary files and outputs of your analysis but needs frequent back up in order not to loose your data.
 
-Projects and reservation for Tier-2 KU Leuven
------------------------------------------------
+In some cases other spaces are reserved for more intense analysis for example.
 
-Running calculations on Tier-2 KU Leuven requires credits. New users obtained 2 millions free credits (introduction) that are valid during 6 months.
-Credits can be obtained through various type of research projects (through university, FWO, EU level). Subset of Tier-2 KUL can be reserved for research events or training events.
+You should also observe that all resources will have different nodes that will differ in memory, disk space, etc. This might be challanging at first to know what to choose, but with time you will learn how much resource each analysis takes depending on the tools, input and output that will be linked to this. Optimizing your analysis to the correct resources will make your use more efficient and the whole community will benefit from this good practice.
 
--------------------------------------------------
-
-# Connecting to use HPC services
-
-## Connect with Open OnDemand
-
-### Tier 2 KUL
-- How to connect: https://ondemand.hpc.kuleuven.be/ 
-- Which services are available: code-server, shell, jupyterlab, nvidia rapids, RStudio Server, Tensorboard
-
-### Tier 2 UGent
-- How to connect: https://login.hpc.ugent.be
-- Which services are available: BAND, Neurodesk, Cluster Desktop, shell, Jupyter Notebook, RStudio, Jupyter Lab, VS Code Tunnel, Code server
-
-### Tier1 compute
-- How to connect: https://tier1.hpc.ugent.be/ 
-- Which services are available: BAND, Neurodesk, Cluster Desktop, Shell, Jupyter Notebook, RStudio, Jupyter Lab, VS Code Tunnel
-  
-### VIB cluster
-- How to connect:
-- - Which services are available: Shell, Jupyter Notebook, RStudio, Jupyter Lab, VS Code Tunnel
-
-## Connect with a Terminal
-
-### Creat and share SSH key 
-
-
-
-<!-- style="color: magenta" --> VO = virtual organization
-
-| Tier  | Login (vscnumber) | Personal storage space | VO Storage Space |  VO Project space |
-| ------------- | ------------- | ------------- | ------------- | ------------- |
-|Tier 1 | tier1.hpc.ugent.be |yes|yes|yes|
-|Tier 2 Ghent | login.hpc.ugent.be |yes|yes|none|
+It is important to rememeber that the access to different resources will vary, for some you will have to buy credits and pay for the storage. For others the access is granted based in other parameters. Always check beforehands what is needed so you take the best approach.
