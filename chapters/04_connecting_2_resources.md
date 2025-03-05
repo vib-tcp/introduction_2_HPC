@@ -29,23 +29,56 @@ link:     https://raw.githubusercontent.com/vibbits/material-liascript/master/vi
 
 # Connecting to use HPC services
 
+You have different ways to connect and access the resources of the HPC. You can use your browser and connect using OnDemand or you connect from your local computer using SSH key credentials. We will see how to use both.
+
+The OnDemand service allowns a friendly interface to be used in your browser. It is specially interesting if you need to have images, visuals or wants to use Jupyter.  As you can already guess, not every instance offers the same service, so you need to check if the instance you are connecting to has what you are expecting to use.
+
+For the case of using OnDemand you don't need an SSH-key, however to access from your computer terminal you will need to creat an SSH-key, which works as an adress to your computer, allowing the communication with remote machines. It is essential that you remember this is an adress that gives access to you computer, so when you do think of a good password. I'll give you more details in the specific session.
+
 ## Connect with Open OnDemand
 
-### Tier 2 KUL
-- How to connect: https://ondemand.hpc.kuleuven.be/ 
-- Which services are available: code-server, shell, jupyterlab, nvidia rapids, RStudio Server, Tensorboard
+Once login in one of the HPC instances usign OnDemand you can find a list of Interactive apps that can include Jupyter notebook, RStudio, VSCode Tunnel among others. 
 
-### Tier 2 UGent
-- How to connect: https://login.hpc.ugent.be
-- Which services are available: BAND, Neurodesk, Cluster Desktop, shell, Jupyter Notebook, RStudio, Jupyter Lab, VS Code Tunnel, Code server
+MISSING IMAGE
+<center><img src="../images/...." width="500"/></center>
 
-### Tier1 compute
-- How to connect: https://tier1.hpc.ugent.be/ 
-- Which services are available: BAND, Neurodesk, Cluster Desktop, Shell, Jupyter Notebook, RStudio, Jupyter Lab, VS Code Tunnel
-  
-### VIB cluster
-- How to connect:
-- - Which services are available: Shell, Jupyter Notebook, RStudio, Jupyter Lab, VS Code Tunnel
+You will find also a shortcut for ther terminal cluster. You can open the terminal in your HOME directory or request an interactive session in one specific node that contains the resources you need. Before I get into this level, let's see how we connect to OnDemand.
+
+* VIB cluster: 
+
+* UGent Tier-1: https://tier1.hpc.ugent.be/ 
+
+* UGent Tier-2: https://login.hpc.ugent.be
+
+* KULeuven Tier-2: https://ondemand.hpc.kuleuven.be/ 
+
+Each link will take you to enter with the account you registeres and will follow the procedures described in chaper02: [Get Ready for the course](../chapters/02_GetReady4course.md).
+
+Once you are connected you will find the menu bar on top where you have **Interactive APPs** and you can check what each instace has to offer. See for example in UGent Tier-2:
+
+<center><img src="../images/UGent-tier2-interactiveapps.png" width="500"/></center>
+
+Print from march-2025.
+
+Once you choose the app you will need to define the resources you need. You that by informing the Cluster name, to be sure youshould check the documentation since the summary in chapter03: [Insfrastucture](../chapters/03_Infrastructure.md) could be outdated. You also have to define for how many hours, cores and memory you need for this session.
+
+<center><img src="../images/UGent-tier2-resources-request.png" width="500"/></center>
+
+Print from march-2025.
+
+When you do so, there is a high chance that you will go into a wating line. The resources are not always imediatly available. Inspite of sometimes the feeling that is an infinit resource, it could have a high demand. 
+
+The more resources you request, the longer is the waiting time usually, also if you request very often you could lose some priority. Thus, be mindful.
+
+If you are in a training session ask your trainer what resources you need to request and if there is a priority list for the course. In the case of a priority list, the trainer will share a piority code that you will include in the specs so your waiting time is smaller.
+
+If you go to **My interactive sessions** in the menu bar you will be redirect to a page with the list of resources and will follow the same step-by-step procedure.
+
+>
+> For this session, let's connect with VSCode
+> Activity:
+>
+>
 
 ## Connect with a Terminal
 
