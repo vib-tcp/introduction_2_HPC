@@ -1,6 +1,6 @@
 <!--
 
-author:   Tatiana Woller, Bruna Piereck, Alexander Botzki
+author:   Tatiana Woller, Bruna Piereck, Alexander Botzki, Benjamin Pavie
 email:    trainingandconferences@vib.be
 version:  1.0.0
 language: en
@@ -26,6 +26,12 @@ link:     https://raw.githubusercontent.com/vibbits/material-liascript/master/vi
 
 @orcid: [@0](@1)<!--class="orcid-logo-for-author-list"-->
 
+
+# Request an account
+
+You can see how to request a VSC account in [chapter02](../chapters/02_GetReady4course.md)
+
+To request an account at VIB you need ....
 
 # Connecting to use HPC services
 
@@ -82,5 +88,99 @@ If you go to **My interactive sessions** in the menu bar you will be redirect to
 
 ## Connect with a Terminal
 
-### Creat and share SSH key 
+To work from the terminal the first thing you are going to need is to creat an autenticated connection between your machine and the HPC. Yes! We are talking about the SSH-key. As I said before the SSH-key is like an adress that will allow communication between your computer and the computer cluster.
+
+That is important to keep in mind  due some implications, first of all for this to be a safe connection you will create a strong password when you are asked during the procedure. Second, it means sharing this key, you will generate two keys and you can only share the public key, that is the one meant for sharing. Third, this means for each computer you will have a different one; So, if you are using your working computer and your personal computer it means following the estps in each of them.
+
+How you can generate this key is a bit different for each operational system. Check which one you need.
+
+## Create SSH key
+
+On Windows
+-------------------------------
+
+For Windows system you have two ways to do it.
+
+1. Using [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) app. And for all details please [check on VSC](https://docs.vscentrum.be/access/generating_keys_with_putty.html#generating-keys-putty) and how they advise you to do it
+
+
+### Putty setting
+![vsc_ssh_putty_config_01](https://user-images.githubusercontent.com/1775952/232025747-8494a5f8-77cd-4d26-a493-c11bab897c0c.png)
+
+![vsc_ssh_putty_config_02](https://user-images.githubusercontent.com/1775952/232025825-3fb4ac9c-8394-4c5c-90c0-aad6c30de7c6.png)
+
+
+On MAC and Linux, using OpenSSH
+-------------------------------
+ 
+ First check if you alredy have a key
+
+ ```
+ $ ls ~/.ssh
+ authorized_keys   id_rsa   id_rsa.pub   known_hosts
+ ```
+
+If you have one, like in the example above you can share you SSH-key with VSC. If you don't have then you need to follow the steps:
+
+```
+$ ssh-keygen -t rsa -b 4096
+Generating public/private rsa key pair.
+```
+
+Don't change the name of the file that is being created, but make sure to have a strong password. You will not see any symbols while typing the password! But this is standard behaviour of unix systems to protect you from people even knowing how many caracters there are in your password. Trust the process and repeat the same password twice
+
+```
+Enter file in which to save the key (/home/bruna/.ssh/id_rsa): 
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again:
+```
+
+Check again and you should see one `id_rsa` and one `id_rsa.pub`, the second one is your **pub**lic key. That is the one you need to share with VSC or VIB clusters.
+
+you can print then so you can copy-past
+
+```
+$ cat ~/.ssh/id_rsa.pub
+ssh-rsa AA...........................
+.....................................
+.....................................
+.....................................
+....................bruna@DESKTOP....
+```
+
+You will see something like this. Starting with ssh-rsa followed by several caracters that were **replaced** by points, and the name of your computer. If you see in the first line `--BEGIN OPENSSH PRIVATE KEY--`, go back! This file data should **NOT** be shared. 
+
+if you want more details check the [VSC documetation](https://docs.vscentrum.be/access/generating_keys_with_openssh.html#generating-keys-linux)
+
+## Share the SSH public key 
+
+Diferent HPC center arounf the globe might give you different directions. It could be done in the command line or by sharing in a centralized page or using apps as PuTTY. 
+
+This bit is important becuase is authorizing and giving directions so communication can be stablished to the remote connection.
+
+VIB procedure
+-------------------------
+
+
+VSC procedure
+-------------------------
+
+For all instances of VSC you have a centralized control. That means that once you have done it for VSC you can use the same credentials and same account to connect to Tier-1 and Tier-2 of UGent, KULeuven and others.
+
+So far you have created an account, you have created the SSH-key, now you need to access the [vsc account webpage](https://account.vscentrum.be/), you will find a top bar menu. 
+
+<center><img src="../images/VSC_accountWebpage.png" width="500"/></center>
+
+Print from march-2025.
+
+If you go to the tab **Edit Account** and scroll down, you will find the option **Add publick key**
+
+![vsc_add_ssh_pub_key](https://user-images.githubusercontent.com/1775952/232023753-4b172e36-58ea-4aa6-bef8-94178406d31d.png)
+
+In the **View Account** tab you will find information about your account, among these you will know your VSC-Uid that has a fromat as **vsc00000**, you might be requested to share this ID in order to be added to a project or priority list of a training session. You will also find the path to your HOME, DATA and SCRATCH directory that is linked to your institution, in my case is UGent.
+
+**Home directory: /user/gent/000/vsc00000**
+**Data directory: /data/gent/000/vsc00000**
+**Scratch directory: /scratch/gent/000/vsc00000**
+
 
