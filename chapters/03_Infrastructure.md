@@ -27,7 +27,7 @@ link:     https://raw.githubusercontent.com/vibbits/material-liascript/master/vi
 @orcid: [@0](@1)<!--class="orcid-logo-for-author-list"-->
 
 
-# WHat is a High-Performance Computing system ?
+# What is a High-Performance Computing system ?
 
 A HPC brings together several technologies such as computer architecture, algorithms, programs and electronics, and system software to solve advanced problems effectively and quickly. A HPC uses clusters of powerful processors, working in parallel, to process massive multi-dimensional datasets (big data) and solve complex problems at extremely high speeds. HPC systems typically perform at speeds more than one million times faster than the fastest commodity desktop, laptop or server systems. [https://www.ibm.com/topics/hpc].
 
@@ -62,7 +62,7 @@ _
 
 * **Tier-3** is representing your personal computer, can be a desktop or a laptop. But is mainly for personal use and has limited resources.
 
-* In **VIB** a HPC cluster is offered by [Data Core](https://datacore.sites.vib.be/en) as a centralized Compute solution. A cluster of computer that will provide multicore processors nodes with higher memory and some GPU nodes. This service is offered only to VIB members.
+* In **VIB** a HPC cluster is offered by [Data Core](https://datacore.sites.vib.be/en) as a centralized Compute solution. A cluster of computers that provides multicore processor nodes grouped in debug, high memory and GPU partitions. This service is offered only to VIB members.
 
 
 >> _
@@ -85,17 +85,9 @@ Generally is good to keep in mind that when you connect to the HPC, the area you
 <!-- style="color: #7CA1CC;" --> \** Storage space for a group of users (Virtual Organisation or VO for short) in VSC can be increased significantly on request, check for [more information](https://docs.vscentrum.be/gent/tier1_hortense.html#system-specific-aspects) if you need.
 
 
-### VIB cluster 
+### VIB Data Core Compute Cluster 
 
-| Filesystem name  | Intended usage | Personal storage space | VO storage space **|
-| ------------- | ------------- | ------------- | ------------- |
-
-
-| Cluster name  | Memory (GiB) | Disk space  |  GPU |
-|---|---|---|---|
-
-
-
+Learn about Compute's hardware here: https://docs.datacore.vib.be/compute-cluster/#hardware
 
 ### UGent instances of the VSC
 
