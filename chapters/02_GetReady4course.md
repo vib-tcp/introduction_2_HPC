@@ -49,9 +49,13 @@ Some students have reported around 4h of investment in this material, but take y
 
 [Image](https://www.freepik.com/free-vector/laptop-with-program-code-isometric-icon-software-development-programming-applications-dark-neon_4102879.htm#fromView=search&page=1&position=0&uuid=d5d9c586-a6c9-4476-97a9-ff0ca4dc781d&query=linux) designed by [fullvector](https://www.freepik.com/author/fullvector) at [Freepik](https://www.freepik.com/)
 
-## 2. Set your VSC account
+## 2. Get access to an HPC
 
-**a. Register** for an [HPC account](https://docs.vscentrum.be/access/vsc_account.html) before the course since it might take some time to process and activate. 
+Request access to one of the two HPC options in preparation of the course since it might take some time to process and activate. 
+
+### Flemisch Supercomputer (VSC)
+
+**a. Register** for an [HPC account](https://docs.vscentrum.be/access/vsc_account.html) 
 
 >
 > P.s.: If you are from industry or in any other situation where you are not linked to an academic institution we can only help you get an account when registered in the workshop, check avaiability in [the website](https://www.vibtrainingandconferences.be/#/).
@@ -87,18 +91,17 @@ Once you are logged in, you should see this page:
 
 All good, you can get started!
 
-## 3. Get a VIB compute account
+### VIB Data Core Compute Cluster
+
+Researchers from VIB (and therefor have a `@vib` email address) can follow this course using the VIB Data Core Compute Cluster. 
 
 **a. Request** an account 
 
-
->
-> P.s.: If you are from industry or in any other situation where you are not linked to an academic institution we can only help you get an account when registered in the workshop, check avaiability in [the website](https://www.vibtrainingandconferences.be/#/).
->
-> In that case the trainer needs to request a temporary account for you to participate in the training activities.
->
-
+If you don't have an account yet, make sure to fill in [this form](https://connect.vib.be/services/command-line-analysis) in advance. See [the page on the Compute Cluster](/chapters/vib_compute) for more details.
 
 **b. Test** your account:
 
-**connecting at VIB compute HPC**
+**Connecting to the Compute Cluster**
+
+- To test your command line access, see https://docs.datacore.vib.be/compute-cluster/entrypoints/command-line-access#connect-with-ssh
+- To test your access to the web interface of Compute (Open OnDemand), see https://docs.datacore.vib.be/compute-cluster/entrypoints/open-on-demand/
