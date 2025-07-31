@@ -54,9 +54,9 @@ orcid:    [@0](@1)<!--class="orcid-logo-for-author-list"
 
 <section>
 
-Hello and welcome to our @tutor workshop! We are very happy to have you here.
+Hello and welcome to our VIB workshop! We are very happy to have you here.
 
-This is the @edition edition of this workshop.
+This is the 2nd edition of this workshop.
 
 > We are using the interactive Open Educational Resource online/offline course infrastructure called LiaScript.
 > It is a distributed way of creating and sharing educational content hosted on github.
