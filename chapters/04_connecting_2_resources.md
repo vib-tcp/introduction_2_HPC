@@ -50,7 +50,7 @@ MISSING IMAGE
 
 You will find also a shortcut for ther terminal cluster. You can open the terminal in your HOME directory or request an interactive session in one specific node that contains the resources you need. Before I get into this level, let's see how we connect to OnDemand.
 
-* VIB cluster: 
+* VIB cluster: https://compute.vib.be/
 
 * UGent Tier-1: https://tier1.hpc.ugent.be/ 
 
@@ -182,5 +182,6 @@ In the **View Account** tab you will find information about your account, among 
 **Home directory: /user/gent/000/vsc00000**
 **Data directory: /data/gent/000/vsc00000**
 **Scratch directory: /scratch/gent/000/vsc00000**
+
 
 
