@@ -58,11 +58,11 @@ _
 
 * **Tier-1** clusters are clusters with services at the level of a region/country because it exceeds the capacity of an institution in terms of needs/costs. For example in the [VSC (Vlaams supercomputer centrum)](https://www.vscentrum.be/compute) there is [Hortense](https://www.vscentrum.be/compute), the Tier-1 computer cluster hosted by UGent university 
 
-* **Tier-2** clusters are available at research institutions level. There are [4 Tier-2 cluster in flandres](https://docs.vscentrum.be/hardware-tier2.html#), hosted bu the universities UAntwerp, VUB, UGent and KULeuven.
+* **Tier-2** clusters are available at research institutions level. There are [4 Tier-2 cluster in flandres](https://docs.vscentrum.be/hardware-tier2.html#), hosted by the universities UAntwerp, VUB, UGent and KULeuven.
 
 * **Tier-3** is representing your personal computer, can be a desktop or a laptop. But is mainly for personal use and has limited resources.
 
-* In **VIB** a HPC cluster is offered by [Data Core](https://datacore.sites.vib.be/en) as a centralized Compute solution. A cluster of computers that provides multicore processor nodes grouped in debug, high memory and GPU partitions. This service is offered only to VIB members.
+* In **VIB** such HPC system is offered by [Data Core](https://datacore.sites.vib.be/en) as a centralized Compute solution. The VIB Data Core Compute Cluster is a cluster of computers that provides multicore processor nodes grouped in debug, high memory (CPU) and GPU partitions in order to achieve high performance computing. This service is offered only to VIB members.
 
 
 >> _
