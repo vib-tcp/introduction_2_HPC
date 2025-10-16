@@ -31,7 +31,7 @@ link:     https://raw.githubusercontent.com/vibbits/material-liascript/master/vi
 
 A HPC brings together several technologies such as computer architecture, algorithms, programs and electronics, and system software to solve advanced problems effectively and quickly. A HPC uses clusters of powerful processors, working in parallel, to process massive multi-dimensional datasets (big data) and solve complex problems at extremely high speeds. HPC systems typically perform at speeds more than one million times faster than the fastest commodity desktop, laptop or server systems. [https://www.ibm.com/topics/hpc].
 
-Among the technologies intergated in a HPC system it can include
+Among the technologies integrated in a HPC system it can include
 
 **High-end compute nodes:** multicore processors.
 
@@ -41,7 +41,7 @@ Among the technologies intergated in a HPC system it can include
 
 **High-memory nodes:** some nodes are equipped with lots of RAM memory, mitigating low disk reads impacting analysis that generate large amounts of intermediary results.
 
-**GPU (Graphical processing units) nodes:** are specialized processors, ideally suited for higly demanding data processing tasks.
+**GPU (Graphical processing units) nodes:** are specialized processors, ideally suited for highly demanding data processing tasks.
 
 
 # Infrastructure
@@ -56,9 +56,9 @@ _
 
 * **Tier-0** clusters are ***Very large*** computing infrastructure available at EU level, for example [PRACE association](https://prace-ri.eu/prace-association/) (Partnership for advanced computing in Europe) has [6 partners](https://prace-ri.eu/prace-archive/infrastructure-support/prace-hpc-infrastructure/) offering a Tier-0 cluster. Belgium is not hosting a Tier-0 but is one of ~25 member in PRACE.
 
-* **Tier-1** clusters are clusters with services at the level of a region/country because it exceeds the capacity of an institution in terms of needs/costs. For example in the [VSC (Vlaams supercomputer centrum)](https://www.vscentrum.be/compute) there is [Hortense](https://www.vscentrum.be/compute), the Tier-1 computer cluster hosted by UGent university 
+* **Tier-1** clusters are clusters with services at the level of a region/country because it exceeds the capacity of an institution in terms of needs/costs. For example in the [VSC (Vlaams Supercomputer Centrum)](https://www.vscentrum.be/compute) there is [Hortense](https://www.vscentrum.be/compute), the Tier-1 computer cluster hosted by UGent university 
 
-* **Tier-2** clusters are available at research institutions level. There are [4 Tier-2 cluster in flandres](https://docs.vscentrum.be/hardware-tier2.html#), hosted by the universities UAntwerp, VUB, UGent and KULeuven.
+* **Tier-2** clusters are available at research institutions level. There are [4 Tier-2 cluster in Flandres](https://docs.vscentrum.be/hardware-tier2.html#), hosted by the universities UAntwerp, VUB, UGent and KULeuven.
 
 * **Tier-3** is representing your personal computer, can be a desktop or a laptop. But is mainly for personal use and has limited resources.
 
@@ -75,9 +75,9 @@ _
 
 ## Storage and Computer Nodes systems
 
-A HPC needs different types of storage to maintain the efficience of its vast and complex infrastructure. Each instace will possibly name them differently, but they have defined purposes that you need to take in account when using their environmet. On top of the filesystem, each node will have different computational powers, therefore, depending on your needs, you can choose the one that most suits you.
+A HPC needs different types of storage to maintain the efficiency of its vast and complex infrastructure. Each instance will possibly name them differently, but they have defined purposes that you need to take in account when using their environment. On top of the filesystem, each node will have different computational powers, therefore, depending on your needs, you can choose the one that most suits you.
 
-It means that the files and storage systems in place **will vary**. Knowing this what storages, their purpose and maintanance will be important to understand ***how*** and ***where*** to keep, analyze and backup your data. Additionlly, as you probably already guessed, there is a difference if we are talking about personal use and project wise. Specific projects might request specific resources and will define who can access it.
+It means that the files and storage systems in place **will vary**. Knowing this what storages, their purpose and maintenance will be important to understand ***how*** and ***where*** to keep, analyze and backup your data. Additionally, as you probably already guessed, there is a difference if we are talking about personal use and project wise. Specific projects might request specific resources and will define who can access it.
 
 Generally is good to keep in mind that when you connect to the HPC, the area you start at is like the hall of a house, you should not keep too many things there or do tasks in this location. You will also have a long-term storage, where you can keep your data, but also not where your tasks will be done. Last you will have a temporary large storage place that can be access when using your tasks
 
@@ -95,7 +95,7 @@ Learn about Compute's hardware here: https://docs.datacore.vib.be/compute-cluste
 Tier-1 instance of UGent
 -------------------------
 
-You can find more details about the Tier1 of the [VCS ](https://www.vscentrum.be/), but we try to summarize some aspects here. Keep in mind that most updated information will be found in the links. In the Tier-1 instace, additionally to the nodes listed bellow you can request 2 other nodes that are a combination for high demand analysis; **(1)** `cpu_rome_all` corresponds to a combination of `cpu_rome` and `cpu_rome_512`; **(2)** `gpu_rome_a100_all` corresponds to a combination of `gpu_rome_a100_40` and `gpu_rome_a100_80`.
+You can find more details about the Tier1 of the [VCS ](https://www.vscentrum.be/), but we try to summarize some aspects here. Keep in mind that most updated information will be found in the links. In the Tier-1 instance, additionally to the nodes listed bellow you can request 2 other nodes that are a combination for high demand analysis; **(1)** `cpu_rome_all` corresponds to a combination of `cpu_rome` and `cpu_rome_512`; **(2)** `gpu_rome_a100_all` corresponds to a combination of `gpu_rome_a100_40` and `gpu_rome_a100_80`.
 
 | Cluster name  | Memory (GiB) | Disk space (GB) SSD  |  GPU | GPU memory (GiB)|
 |---|---|---|---|---|
@@ -123,7 +123,7 @@ Tier-2 instance of UGent
 
 You can find more details about the [UGent instance](https://docs.vscentrum.be/gent/tier2_hardware.html) but we try to summarize some aspects here. Keep in mind that most updated information will be found in the links. 
 
-These are the nodes available at Tier-2 UGent and you can see tehy will vary in memory, disk space and if they have or not GPUs. I want you to pay special attention to [**donphan**](https://docs.hpc.ugent.be/Linux/interactive_debug/), this is the debug and testing node, is also the one using during training sessions.
+These are the nodes available at Tier-2 UGent and you can see they will vary in memory, disk space and if they have or not GPUs. I want you to pay special attention to [**donphan**](https://docs.hpc.ugent.be/Linux/interactive_debug/), this is the debug and testing node, is also the one using during training sessions.
 
 
 | Cluster name  | Memory (GiB) | Disk space  |  GPU |
@@ -152,9 +152,9 @@ Source : https://docs.vscentrum.be/en/latest/gent/tier2_hardware.html?highlight=
 
 ### KULeuven section of the VSC
 
-If you need to use the KULeuven instance of the [VSC](https://www.vscentrum.be/), it's most likely need to be part of a group which has credits to use the resources. If it is part of a traning they need to include you in their list, in this case you use traning credits and has priorities in the reserved cluster. 
+If you need to use the KULeuven instance of the [VSC](https://www.vscentrum.be/), it's most likely need to be part of a group which has credits to use the resources. If it is part of a training they need to include you in their list, in this case you use training credits and has priorities in the reserved cluster. 
 
-As you already could see for the previous instances, each has different resources, for this case is not different, they have a file system and each of the two instances will have differente resources.
+As you already could see for the previous instances, each has different resources, for this case is not different, they have a file system and each of the two instances will have different resources.
 
 Filesystems specifics
 
@@ -199,14 +199,14 @@ Tier 2 KULeuven - wICE
 
 ## Summary
 
-With this overview you should be able to observe that every HPC instace will need a file system that should have at least 3 main locations
+With this overview you should be able to observe that every HPC instance will need a file system that should have at least 3 main locations
 
-1. The entripoint for you to communicate to the larger part of the system
+1. The entrypoint for you to communicate to the larger part of the system
 2. A long term storage where most of the data should be kept
 3. A low term temporary storage with more space to keep temporary files and outputs of your analysis but needs frequent back up in order not to loose your data.
 
 In some cases other spaces are reserved for more intense analysis for example.
 
-You should also observe that all resources will have different nodes that will differ in memory, disk space, etc. This might be challanging at first to know what to choose, but with time you will learn how much resource each analysis takes depending on the tools, input and output that will be linked to this. Optimizing your analysis to the correct resources will make your use more efficient and the whole community will benefit from this good practice.
+You should also observe that all resources will have different nodes that will differ in memory, disk space, etc. This might be challenging at first to know what to choose, but with time you will learn how much resource each analysis takes depending on the tools, input and output that will be linked to this. Optimizing your analysis to the correct resources will make your use more efficient and the whole community will benefit from this good practice.
 
-It is important to rememeber that the access to different resources will vary, for some you will have to buy credits and pay for the storage. For others the access is granted based in other parameters. Always check beforehands what is needed so you take the best approach.
+It is important to remember that the access to different resources will vary, for some you will have to buy credits and pay for the storage. For others the access is granted based in other parameters. Always check beforehand what is needed so you take the best approach.

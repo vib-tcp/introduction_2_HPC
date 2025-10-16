@@ -30,7 +30,7 @@ link:     https://raw.githubusercontent.com/vibbits/material-liascript/master/vi
 The easiest way to use software on the VSC, is to use the pre-installed software, that is installed as an Easy Build module.
 Alternatively, you could create your own conda/mamba environment and use it in a python script or a jupyter notebook.
 More advanced ways to user/run software are: - using singularity containers
-- running nextflow workflow
+- running Nextflow workflow
   
 ### CPU vs GPU
 
@@ -191,7 +191,7 @@ export PATH="${VSC_DATA}/miniconda3/bin:${PATH}
 conda install ipykernel
 python -m ipykernel install  --prefix=${VSC_HOME}/.local/ --name 'cellpose'
 ```
-In this example, the conda envirmnemnt will be accessible under the name `cellpose`
+In this example, the conda environment will be accessible under the name `cellpose`
 
 ## Use the conda enviroment with a jupyter notebook
 

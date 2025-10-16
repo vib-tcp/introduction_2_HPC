@@ -1,6 +1,6 @@
 <!--
 
-author:   Bruna Piereck
+author:   Bruna Piereck, Boris Depoortere
 email:    trainingandconferences@vib.be
 version:  1.0.0
 language: en
@@ -41,19 +41,19 @@ In this session you will find what you need to install in your computer addition
 
 ## 1. You must have Unix command line experience
 
-If you don't have experience or need a refreshement, please check our online, self-paced [Introduction to Linux Command Line](https://elearning.vib.be/courses/linux/) course
+If you don't have experience or need to refresh your memory, please check our online, self-paced [Introduction to Linux Command Line](https://elearning.vib.be/courses/linux/) course
 
-Some students have reported around 4h of investment in this material, but take your time to get confortable with the concepts and commands. Think of the folder structure and how to navigate in the computer within a terminal.
+Some students have reported around 4h of investment in this material, but take your time to get comfortable with the concepts and commands. Think of the folder structure and how to navigate in the computer within a terminal.
 
 <img src="../images/laptop-with-program-code-isometric-icon-software-development-programming-applications-dark-neon/971.jpg" alt="programming" width="300"/>
 
-[Image](https://www.freepik.com/free-vector/laptop-with-program-code-isometric-icon-software-development-programming-applications-dark-neon_4102879.htm#fromView=search&page=1&position=0&uuid=d5d9c586-a6c9-4476-97a9-ff0ca4dc781d&query=linux) designed by [fullvector](https://www.freepik.com/author/fullvector) at [Freepik](https://www.freepik.com/)
+[Image](https://www.freepik.com/free-vector/laptop-with-program-code-isometric-icon-software-development-programming-applications-dark-neon_4102879.htm#fromView=search&page=1&position=0&uuid=d5d9c586-a6c9-4476-97a9-ff0ca4dc781d&query=linux) designed by [Fullvector](https://www.freepik.com/author/fullvector) at [Freepik](https://www.freepik.com/)
 
 ## 2. Get access to an HPC
 
 Request access to one of the two HPC options in preparation of the course since it might take some time to process and activate. 
 
-### Flemisch Supercomputer (VSC)
+### Flemish Supercomputer (VSC)
 
 #### a. Register for an [HPC account](https://docs.vscentrum.be/access/vsc_account.html) 
 
