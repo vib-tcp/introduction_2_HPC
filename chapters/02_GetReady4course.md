@@ -1,6 +1,6 @@
 <!--
 
-author:   Bruna Piereck
+author:   Bruna Piereck, Boris Depoortere
 email:    trainingandconferences@vib.be
 version:  1.0.0
 language: en
@@ -41,21 +41,21 @@ In this session you will find what you need to install in your computer addition
 
 ## 1. You must have Unix command line experience
 
-If you don't have experience or need a refreshement, please check our online, self-paced [Introduction to Linux Command Line](https://elearning.vib.be/courses/linux/) course
+If you don't have experience or need to refresh your memory, please check our online, self-paced [Introduction to Linux Command Line](https://elearning.vib.be/courses/linux/) course
 
-Some students have reported around 4h of investment in this material, but take your time to get confortable with the concepts and commands. Think of the folder structure and how to navigate in the computer within a terminal.
+Some students have reported around 4h of investment in this material, but take your time to get comfortable with the concepts and commands. Think of the folder structure and how to navigate in the computer within a terminal.
 
 <img src="../images/laptop-with-program-code-isometric-icon-software-development-programming-applications-dark-neon/971.jpg" alt="programming" width="300"/>
 
-[Image](https://www.freepik.com/free-vector/laptop-with-program-code-isometric-icon-software-development-programming-applications-dark-neon_4102879.htm#fromView=search&page=1&position=0&uuid=d5d9c586-a6c9-4476-97a9-ff0ca4dc781d&query=linux) designed by [fullvector](https://www.freepik.com/author/fullvector) at [Freepik](https://www.freepik.com/)
+[Image](https://www.freepik.com/free-vector/laptop-with-program-code-isometric-icon-software-development-programming-applications-dark-neon_4102879.htm#fromView=search&page=1&position=0&uuid=d5d9c586-a6c9-4476-97a9-ff0ca4dc781d&query=linux) designed by [Fullvector](https://www.freepik.com/author/fullvector) at [Freepik](https://www.freepik.com/)
 
 ## 2. Get access to an HPC
 
 Request access to one of the two HPC options in preparation of the course since it might take some time to process and activate. 
 
-### Flemisch Supercomputer (VSC)
+### Flemish Supercomputer (VSC)
 
-**a. Register** for an [HPC account](https://docs.vscentrum.be/access/vsc_account.html) 
+#### a. Register for an [HPC account](https://docs.vscentrum.be/access/vsc_account.html) 
 
 >
 > P.s.: If you are from industry or in any other situation where you are not linked to an academic institution we can only help you get an account when registered in the workshop, check avaiability in [the website](https://www.vibtrainingandconferences.be/#/).
@@ -65,7 +65,7 @@ Request access to one of the two HPC options in preparation of the course since 
 
 Once you have an account, you can [access it](https://account.vscentrum.be/), and you will be able to see your VSC ID, and other information about your account. Eventually you might want to add an SSH key to connect remotely. You will not need this for this session.
 
-**b. Test** your account:
+#### b. Test your account:
 
 **connecting at UGent instance of VSC**
 
@@ -95,13 +95,15 @@ All good, you can get started!
 
 Researchers from VIB (and therefor have a `@vib` email address) can follow this course using the VIB Data Core Compute Cluster. 
 
-**a. Request** an account 
+
+#### a. Request an account 
 
 If you don't have an account yet, make sure to fill in [this form](https://connect.vib.be/services/command-line-analysis) in advance. See [the page on the Compute Cluster](/chapters/vib_compute) for more details.
 
-**b. Test** your account:
+#### b. Test your account:
 
 **Connecting to the Compute Cluster**
 
 - To test your command line access, see https://docs.datacore.vib.be/compute-cluster/entrypoints/command-line-access#connect-with-ssh
 - To test your access to the web interface of Compute (Open OnDemand), see https://docs.datacore.vib.be/compute-cluster/entrypoints/open-on-demand/
+

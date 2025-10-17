@@ -35,8 +35,8 @@ link:     https://raw.githubusercontent.com/vibbits/material-liascript/master/vi
 **This material is derived from ["HPC training Bio-imaging"](https://liascript.github.io/course/?https://raw.githubusercontent.com/vib-bic-training/HPC_training_bioimaging_1/refs/heads/main/README.md#1)**
 ========================================================================================
 
-> This materia is a distributed way of creating and sharing educational content hosted on github.
-> To see this document as an interactive LiaScript rendered version, click on the
+> This material is a distributed way of creating and sharing educational content hosted on github.
+> To see this document as an interactive LiaScript rendered version (WIP), click on the
 > following link/badge:
 >
 > [![LiaScript](https://raw.githubusercontent.com/LiaScript/LiaScript/master/badges/course.svg)](https://liascript.github.io/course/?link)
@@ -46,7 +46,7 @@ link:     https://raw.githubusercontent.com/vibbits/material-liascript/master/vi
 ### Lesson overview
 
 > <i class="fa fa-bookmark"></i> **Description**  
-> This is our interactive hands-on course about the use of HPC (High Performance Computing). Here you will learn about different HPC structures, their simmilarities and specificities. You will learn best practices to submit and have good registry of your 'jobs' and to check the list of available softaware. The aim is that understanding the building blocks your are not only able to use the VSC and VIB resources, but can easily adapt whenever facing another instace of HPC.
+> This is our interactive hands-on course about the use of HPC (High Performance Computing). Here you will learn about different HPC structures, their similarities and specificities. You will learn best practices to submit and have good registry of your 'jobs' and to check the list of available software. The aim is that understanding the building blocks your are not only able to use the VSC and VIB resources, but can easily adapt whenever facing another instance of HPC.
 > 
 > <i class="fa fa-arrow-left"></i> **Prerequisites**  
 > To be able to follow the **General** HPC course, you should:
@@ -72,7 +72,7 @@ link:     https://raw.githubusercontent.com/vibbits/material-liascript/master/vi
 >>
 >> 2. Access existing HPC infrastructures in Flanders such as VSC and VIB Data Core
 >>
->> 3. Use the different evironments in the HPC (storage, analysis, debug)
+>> 3. Use the different environments in the HPC (storage, analysis, debug)
 >>
 >> 4. Querying and using modules and its versions in the HPC
 >>
@@ -117,18 +117,19 @@ Part of this training was reused from the ["HPC training Bio-imaging"](https://l
 
 Please cite as:
 
-> Session under developtment
+> Session under development
 
   1. ....
 
 ## Schedule
 
-Schedule day 1:
+Half day Schedule:
 
-| Time | Session |
-|  --- |   ---   |
-| 09:00 - 10:45 | First part  |
-| 10:45 - 11:00 | break       |
-| 11:00 - 12:30 | Second part |
+- 13:00 - 13:30 - Introduction
+- 13:30 - 15:00 - Accessing in the terminal and OnDemand
+- 15:00 - 15:15 - Coffee Break
+- 15:15 - 16:00 - Interactive sessions (debug and testing)
+- 16:00 - 16:30 - Querying and using modules in the HPC
+- 16:30 - 17:00 - Submitting and managing jobs
 
 </section>

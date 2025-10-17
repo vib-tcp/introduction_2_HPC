@@ -27,12 +27,13 @@ link:     https://raw.githubusercontent.com/vibbits/material-liascript/master/vi
 @orcid: [@0](@1)<!--class="orcid-logo-for-author-list"-->
 
 ## Software
-The easiest way to use software on the VSC, is to use the pre-installed software, that is installed as an Easy Build module.
+The easiest way to use software on the VSC, is to use the pre-installed software, that is installed as an EasyBuild module.
 Alternatively, you could create your own conda/mamba environment and use it in a python script or a jupyter notebook.
-More advanced ways to user/run software are: - using singularity containers
-- running nextflow workflow
+More advanced ways to use/run software are: 
+- using singularity containers
+- running Nextflow workflow
   
-### CPU vs GPU
+### CPU vs. GPU
 
 Not all software are relying on GPU.
 - CPU software: Fiji, QuPath
@@ -122,7 +123,6 @@ For more information about modules: https://hprc.tamu.edu/kb/Software/GNU-Compil
 7. [n2v](https://github.com/juglab/n2v) : n2v/0.3.2-foss-2022a-CUDA-11.7.0
 8. Monai: MONAI/1.0.1-foss-2022a
 9. QuPath: QuPath/0.5.0-GCCcore-12.3.0-Java-17
-10. 
 
 #### Module for spatial omics in python
 1. [Scanpy](https://github.com/scverse/scanpy): scanpy/1.9.1-foss-2021b
@@ -191,11 +191,9 @@ export PATH="${VSC_DATA}/miniconda3/bin:${PATH}
 conda install ipykernel
 python -m ipykernel install  --prefix=${VSC_HOME}/.local/ --name 'cellpose'
 ```
-In this example, the conda envirmnemnt will be accessible under the name `cellpose`
+In this example, the conda environment will be accessible under the name `cellpose`
 
 ## Use the conda enviroment with a jupyter notebook
-
-:warning: **The ondemands interface doesn't wok well on Firefox, it's best to use Chrome**:warning:
 
 - After connecting to JupyterLab
 ![image](https://github.com/vibbits/reprohack_bioimaging/assets/1775952/8ee777a7-2498-43a7-ade6-c063ea96d4de)

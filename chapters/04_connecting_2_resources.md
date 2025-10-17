@@ -29,28 +29,27 @@ link:     https://raw.githubusercontent.com/vibbits/material-liascript/master/vi
 
 # Request an account
 
-You can see how to request a VSC account in [chapter02](../chapters/02_GetReady4course.md)
+You can see how to request a VSC account in [chapter02](../chapters/02_GetReady4course.md#a-register-for-an-hpc-account).
 
-To request an account at VIB you need ....
+To request an account at VIB, checkout [the following section in chapter02](../chapters/02_GetReady4course.md#a-request-an-account).
 
 # Connecting to use HPC services
 
 You have different ways to connect and access the resources of the HPC. You can use your browser and connect using OnDemand or you connect from your local computer using SSH key credentials. We will see how to use both.
 
-The OnDemand service allowns a friendly interface to be used in your browser. It is specially interesting if you need to have images, visuals or wants to use Jupyter.  As you can already guess, not every instance offers the same service, so you need to check if the instance you are connecting to has what you are expecting to use.
+The OnDemand service allows a friendly interface to be used in your browser. It is specially interesting if you need to have images, visuals or wants to use Jupyter.  As you can already guess, not every instance offers the same service, so you need to check if the instance you are connecting to has what you are expecting to use.
 
-For the case of using OnDemand you don't need an SSH-key, however to access from your computer terminal you will need to creat an SSH-key, which works as an adress to your computer, allowing the communication with remote machines. It is essential that you remember this is an adress that gives access to you computer, so when you do think of a good password. I'll give you more details in the specific session.
+For the case of using OnDemand you don't need an SSH-key, however to access from your computer terminal you will need to create an SSH-key, which works as an address to your computer, allowing the communication with remote machines. It is essential that you remember this is an address that gives access to you computer, so when you do think of a good password. I'll give you more details in the specific session.
 
 ## Connect with Open OnDemand
 
-Once login in one of the HPC instances usign OnDemand you can find a list of Interactive apps that can include Jupyter notebook, RStudio, VSCode Tunnel among others. 
+Once you are logged in on one of the HPC instances using OnDemand you can find a list of interactive apps that can include Jupyter notebook, RStudio, VSCode Tunnel among others. 
 
-MISSING IMAGE
-<center><img src="../images/...." width="500"/></center>
+<center><img src="../images/KULeuven_ondemand.png" width="500"/></center>
 
-You will find also a shortcut for ther terminal cluster. You can open the terminal in your HOME directory or request an interactive session in one specific node that contains the resources you need. Before I get into this level, let's see how we connect to OnDemand.
+You will also find a shortcut for their terminal cluster. You can open the terminal in your home directory (also known as `$HOME` or `~`) or request an interactive session in one specific node that contains the resources you need. Before we get into this level, let's see how we can connect to OnDemand.
 
-* VIB cluster: https://compute.vib.be/
+* VIB Data Core Compute Cluster: https://compute.vib.be/
 
 * UGent Tier-1: https://tier1.hpc.ugent.be/ 
 
@@ -58,25 +57,25 @@ You will find also a shortcut for ther terminal cluster. You can open the termin
 
 * KULeuven Tier-2: https://ondemand.hpc.kuleuven.be/ 
 
-Each link will take you to enter with the account you registeres and will follow the procedures described in chaper02: [Get Ready for the course](../chapters/02_GetReady4course.md).
+Each link will take you to enter with the account you registered with and will follow the procedures described in chapter02: [Get Ready for the course](../chapters/02_GetReady4course.md).
 
-Once you are connected you will find the menu bar on top where you have **Interactive APPs** and you can check what each instace has to offer. See for example in UGent Tier-2:
+Once you are connected you will find the menu bar on top where you have **Interactive APPs** and you can check what each instance has to offer. See for example in UGent Tier-2:
 
 <center><img src="../images/UGent-tier2-interactiveapps.png" width="500"/></center>
 
 Print from march-2025.
 
-Once you choose the app you will need to define the resources you need. You that by informing the Cluster name, to be sure youshould check the documentation since the summary in chapter03: [Insfrastucture](../chapters/03_Infrastructure.md) could be outdated. You also have to define for how many hours, cores and memory you need for this session.
+Once you choose the app you will need to define the resources you need. You can do that by informing the Cluster name, to be sure you should check the documentation since the summary in chapter03: [Infrastructure](../chapters/03_Infrastructure.md) could be outdated. You also have to define for how many hours, cores and memory you need for this session.
 
 <center><img src="../images/UGent-tier2-resources-request.png" width="500"/></center>
 
 Print from march-2025.
 
-When you do so, there is a high chance that you will go into a wating line. The resources are not always imediatly available. Inspite of sometimes the feeling that is an infinit resource, it could have a high demand. 
+When you do so, there is a high chance that you will go into a waiting line. The resources are not always immediately available. Despite of sometimes having the feeling that it is an infinite resource, it could have a high demand. 
 
 The more resources you request, the longer is the waiting time usually, also if you request very often you could lose some priority. Thus, be mindful.
 
-If you are in a training session ask your trainer what resources you need to request and if there is a priority list for the course. In the case of a priority list, the trainer will share a piority code that you will include in the specs so your waiting time is smaller.
+If you are in a training session ask your trainer what resources you need to request and if there is a priority list for the course. In the case of a priority list, the trainer will share a priority code that you will include in the specs so your waiting time is smaller.
 
 If you go to **My interactive sessions** in the menu bar you will be redirect to a page with the list of resources and will follow the same step-by-step procedure.
 
@@ -88,9 +87,9 @@ If you go to **My interactive sessions** in the menu bar you will be redirect to
 
 ## Connect with a Terminal
 
-To work from the terminal the first thing you are going to need is to creat an autenticated connection between your machine and the HPC. Yes! We are talking about the SSH-key. As I said before the SSH-key is like an adress that will allow communication between your computer and the computer cluster.
+To work from the terminal the first thing you are going to need is to create an authenticated connection between your machine and the HPC. Yes! We are talking about the SSH-key. As I said before the SSH-key is like an address that will allow communication between your computer and the computer cluster.
 
-That is important to keep in mind  due some implications, first of all for this to be a safe connection you will create a strong password when you are asked during the procedure. Second, it means sharing this key, you will generate two keys and you can only share the public key, that is the one meant for sharing. Third, this means for each computer you will have a different one; So, if you are using your working computer and your personal computer it means following the estps in each of them.
+That is important to keep in mind due some implications, first of all for this to be a safe connection you will create a strong password when you are asked during the procedure. Second, it means sharing this key, you will generate two keys and you can only share the public key, that is the one meant for sharing. Third, this means for each computer you will have a different one; So, if you are using your working computer and your personal computer it means following the steps in each of them.
 
 How you can generate this key is a bit different for each operational system. Check which one you need.
 
@@ -101,7 +100,7 @@ On Windows
 
 For Windows system you have two ways to do it.
 
-1. Using [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) app. And for all details please [check on VSC](https://docs.vscentrum.be/access/generating_keys_with_putty.html#generating-keys-putty) and how they advise you to do it
+1. Using [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) app. And for all details please [check on VSC](https://docs.vscentrum.be/access/generating_keys_with_putty.html#generating-keys-putty) and how they advise you to do it.
 
 
 ### Putty setting
@@ -113,7 +112,7 @@ For Windows system you have two ways to do it.
 On MAC and Linux, using OpenSSH
 -------------------------------
  
- First check if you alredy have a key
+ First check if you already have a key
 
  ```
  $ ls ~/.ssh
@@ -127,7 +126,7 @@ $ ssh-keygen -t rsa -b 4096
 Generating public/private rsa key pair.
 ```
 
-Don't change the name of the file that is being created, but make sure to have a strong password. You will not see any symbols while typing the password! But this is standard behaviour of unix systems to protect you from people even knowing how many caracters there are in your password. Trust the process and repeat the same password twice
+Don't change the name of the file that is being created, but make sure to have a strong password. You will not see any symbols while typing the password! But this is standard behavior of unix systems to protect you from people even knowing how many characters there are in your password. Trust the process and repeat the same password twice
 
 ```
 Enter file in which to save the key (/home/bruna/.ssh/id_rsa): 
@@ -148,19 +147,19 @@ ssh-rsa AA...........................
 ....................bruna@DESKTOP....
 ```
 
-You will see something like this. Starting with ssh-rsa followed by several caracters that were **replaced** by points, and the name of your computer. If you see in the first line `--BEGIN OPENSSH PRIVATE KEY--`, go back! This file data should **NOT** be shared. 
+You will see something like this. Starting with ssh-rsa followed by several characters that were **replaced** by points, and the name of your computer. If you see in the first line `--BEGIN OPENSSH PRIVATE KEY--`, go back! This file data should **NOT** be shared. 
 
 if you want more details check the [VSC documetation](https://docs.vscentrum.be/access/generating_keys_with_openssh.html#generating-keys-linux)
 
 ## Share the SSH public key 
 
-Diferent HPC center arounf the globe might give you different directions. It could be done in the command line or by sharing in a centralized page or using apps as PuTTY. 
+Different HPC center around the globe might give you different directions. It could be done on the command line or by sharing in a centralized page or using apps as PuTTY. 
 
-This bit is important becuase is authorizing and giving directions so communication can be stablished to the remote connection.
+This bit is important because it is used for authorization and giving directions so communication can be established to the remote connection.
 
 VIB procedure
 -------------------------
-
+The VIB Single Sign-on (SSO) is leveraged through a program called Smallstep. Installation procedures can be found in [the Data Core documentation](https://docs.datacore.vib.be/compute-cluster/entrypoints/command-line-access/#installing-smallstep). 
 
 VSC procedure
 -------------------------
@@ -173,15 +172,16 @@ So far you have created an account, you have created the SSH-key, now you need t
 
 Print from march-2025.
 
-If you go to the tab **Edit Account** and scroll down, you will find the option **Add publick key**
+If you go to the tab **Edit Account** and scroll down, you will find the option **Add public key**
 
 ![vsc_add_ssh_pub_key](https://user-images.githubusercontent.com/1775952/232023753-4b172e36-58ea-4aa6-bef8-94178406d31d.png)
 
-In the **View Account** tab you will find information about your account, among these you will know your VSC-Uid that has a fromat as **vsc00000**, you might be requested to share this ID in order to be added to a project or priority list of a training session. You will also find the path to your HOME, DATA and SCRATCH directory that is linked to your institution, in my case is UGent.
+In the **View Account** tab you will find information about your account, among these you will know your VSC-Uid that has a format as **vsc00000**, you might be requested to share this ID in order to be added to a project or priority list of a training session. You will also find the path to your `$HOME`, `$DATA` and `$SCRATCH` directory that is linked to your institution, in my case is UGent.
 
 **Home directory: /user/gent/000/vsc00000**
 **Data directory: /data/gent/000/vsc00000**
 **Scratch directory: /scratch/gent/000/vsc00000**
+
 
 
 

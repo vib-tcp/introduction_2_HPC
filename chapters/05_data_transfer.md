@@ -28,35 +28,38 @@ link:     https://raw.githubusercontent.com/vibbits/material-liascript/master/vi
 
 ## Data transfer
 
-There some different way to transfer data in and out of the CLuster. But the safest way to transfer big chunks of data is using Globus.
+There are different ways to transfer data in and out of the Cluster. But the safest way to transfer big chunks of data is using Globus.
 ​Globus is a research cyberinfrastructure, developed and operated as a not-for-profit service by the University of Chicago.
 Globus enables to transfer, share and back-up data regardless of its size and its location 
 (i.e. from a supercomputer, drive, laptop, cloud and machines such as a microscope).
-In addition, several repositories such EMPIAR or Bioimage archive are using or implementing globus for data deposition/transfer
-Globus can execute through a webinterface or through commandline, with/without human interaction.
+In addition, several repositories such as EMPIAR or Bioimage archive are using or implementing Globus for data deposition/transfer
+Data transfers through Globus can be executed through a web interface or through commandline, with and without human interaction.
 There is a general session and one session approaching some specifics for Bioimaging.
 
 ### Globus setup 
 
 
-Authentification 
+Authentication
 ----------------------
 
-**$\textcolor{red}{\textsf{Warning}}$** : via the web interface, you can only download one file at a time, see [VSC & globus](https://docs.vscentrum.be/en/latest/globus/using_globus_via_web.html)
+**$\textcolor{red}{\textsf{Warning}}$** : via the web interface, you can only download one file at a time, see [VSC & Globus](https://docs.vscentrum.be/en/latest/globus/using_globus_via_web.html)
 
 1. Browse to the [Globus](https://www.globus.org/) website.
 2. Go to Log in (right upper corner)
-3. Select your organisation e.g. KU Leuven association/ UGent/ UAntwerp/VIB and click on Continue
+3. Select your organisation e.g. KU Leuven association/ UGent/ UAntwerp /VIB and click on Continue
 4. Follow KU Leuven login procedure via the KU Leuven Authenticator e.g. Scan QR
 5. Accept Information to be Provided to Service (always or one time only) and click on Accept
 6. Globus App File Manager will be displayed in the browser tab.
 
-Installation globus personnal connector 
+Installation Globus Connect Personal
 --------------------------------------------------------------
 
-1. Download globus connector on your computer (if you have a windows pc go to:  https://docs.globus.org/globus-connect-personal/install/windows/ or if you have a mac pc go to: https://docs.globus.org/globus-connect-personal/install/mac/ )
-2. Install globus connector on the folder where you have  administrator rights (for KUL in My_Programs or My_Downloads) when the VPN is off.
-3. Authentificate 
+1. Download Globus Connect Personal on your computer:
+  - Windows:  https://docs.globus.org/globus-connect-personal/install/windows/ 
+  - MacOS: https://docs.globus.org/globus-connect-personal/install/mac/
+  - Linux: https://docs.globus.org/globus-connect-personal/install/linux
+2. Install Globus Connect Personal in a folder where you have administrator rights (for KUL in My_Programs or My_Downloads) when the VPN is off.
+3. Authenticate
 
 
 .... 
@@ -67,7 +70,7 @@ Installation globus personnal connector
 
 ##### From your computer to active storage (VSC)
 
-1. After authentification,  Globus App File Manager will be displayed in the browser tab.
+1. After authentication, Globus App File Manager will be displayed in the browser tab.
 2. Follow Globus file transfer [tutorial](https://vlaams-supercomputing-centrum-vscdocumentation.readthedocs-hosted.com/en/latest/globus/managing_and_transferring_files.html#globus-collections-and-endpoints)
 3. Use **VSC UGent Tier1 projects** as endpoint and the exact name of the project is "2024_300"
 
@@ -111,11 +114,11 @@ These folders are accessible via the File Manager in the Bioimage ANalysis Deskt
 
 ## Research data management
 ### ManGO
-ManGO is developped by KU Leuven as a middelware on the top of iRODS (an open source data management software). 
+ManGO is developed by KU Leuven as a middleware on the top of iRODS (an open source data management software). 
 ManGO is data agnostic and used in different fields (exact science, life science, humanities) and implemented on VSC, University of Wageningen and National Cancer institute in the Netherlands.
 Thanks to ManGO, the metadata can be extracted automatically through workflows, the metadata can be added through schema and archived with ease.  
 ### DataHub
-Solution provided by Elixir and VIB (for more info, contact Datacore)
+Solution provided by ELIXIR and VIB Data Core (for more info, contact Data Core)
 ### GitHub
 Code should shared on GitHub (Bic code, Bic training and ...)
 
@@ -125,11 +128,11 @@ Code should shared on GitHub (Bic code, Bic training and ...)
 
 ## Steps
 
-**$\textcolor{red}{\textsf{Warning}}$** : via the web interface, you can only download one file at a time, see [VSC & globus](https://docs.vscentrum.be/en/latest/globus/using_globus_via_web.html)
+**$\textcolor{red}{\textsf{Warning}}$** : via the web interface, you can only download one file at a time, see [VSC & Globus](https://docs.vscentrum.be/en/latest/globus/using_globus_via_web.html)
 
 1. Browse to the [Globus](https://www.globus.org/) website.
 2. Go to Log in (right upper corner)
-3. Select your organisation e.g. KU Leuven association and click on Continue
+3. Select your organization e.g. KU Leuven association and click on Continue
 4. Follow KU Leuven login procedure via the KU Leuven Authenticator e.g. Scan QR
 5. Accept Information to be Provided to Service (always or one time only) and click on Accept
 6. Globus App File Manager will be displayed in the browser tab.
@@ -162,4 +165,5 @@ These folders are accessible via the File Manager in the Bioimage ANalysis Deskt
 12. Other endpoints:
 - VSC KU Leuven tier2 scratch (Tier-2 KUL): /scratch/xxx/vscxxxyy
 - VSC UGENT Tier2 filesystem (Tier-2 UGent): /scratch/gent
-- VIB projects share /sxx/name_folder (sxx=02 for BIC_G, 03 for BIC_L, S00 for training and S20 for DC)
+- VIB Data Core Compute Storage for controlled access data, groups and projects, reference data
+- VIB Data Core Project Storage

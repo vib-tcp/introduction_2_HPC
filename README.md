@@ -46,6 +46,12 @@ edition:  2nd
 orcid:    [@0](@1)<!--class="orcid-logo-for-author-list"
 -->
 
+<html>
+  <head>
+    <script type="text/javascript" src="https://liascript.github.io/course/preview-lia.js"></script>
+  </head>
+  <body>
+
 # Introduction to HPC
 
 > This material is inspired and using extracs from [**"HCP Training Bio-imaging"**](https://github.com/vib-bic-training/HPC_training_bioimaging_1), by Benjamin Pavie and Tatiana Woller. Use was authorized.
@@ -54,10 +60,6 @@ orcid:    [@0](@1)<!--class="orcid-logo-for-author-list"
 
 <section>
 
-Hello and welcome to our VIB workshop! We are very happy to have you here.
-
-This is the 2nd edition of this workshop.
-
 > We are using the interactive Open Educational Resource online/offline course infrastructure called LiaScript.
 > It is a distributed way of creating and sharing educational content hosted on github.
 > To see this document as an interactive LiaScript rendered version, click on the
@@ -65,11 +67,11 @@ This is the 2nd edition of this workshop.
 
 ## General context
 
-Welcome to our **Introduction to HPC** workshop! We are very happy to have you here.
+Welcome to our **Introduction to HPC** VIB workshop! We are very happy to have you here.
 
 This is the 2nd edition of this workshop
 
-The half day session aims to introduce the different options available withing the Flemish system, while enabling studnets to quicl adapt to any HPC system they migh access around the globe. With some best practices and differences and similarities within each system.
+The half day session aims to introduce the different options available withing the Flemish system, while enabling students to quickly adapt to any HPC system they might access around the globe. With some best practices and differences and similarities within each system.
 
 The **presentation** which goes alongside this material can be found [here](https://docs.google.com/presentation/d/1J6qROZ35JVeKpVx8TAjWNtbsjescx95ZtqbBCV8vYrg/edit?usp=sharing).
 
@@ -77,12 +79,12 @@ The **presentation** which goes alongside this material can be found [here](http
 
 Half day Schedule:
 
-- 9:00 - 09:30 - Introduction
-- 09:30 - 10:30 - Accessing in the terminal and ondemand
-- 10:30 - 10:45 - Coffee Break
-- 10:45 - 11:30 - Interactive sessions (debug and testing)
-- 11:30 - 12:00 - Querying and using modules in the HPC
-- 12:00 - 12:30 - Submitting and managing jobs
+- 13:00 - 13:30 - Introduction
+- 13:30 - 15:00 - Accessing in the terminal and OnDemand
+- 15:00 - 15:15 - Coffee Break
+- 15:15 - 16:00 - Interactive sessions (debug and testing)
+- 16:00 - 16:30 - Querying and using modules in the HPC
+- 16:30 - 17:00 - Submitting and managing jobs
 
 </section>
 
@@ -154,8 +156,8 @@ Half day Schedule:
 
 Authors
 
-- [Bruna Piereck](@[orcid](https://orcid.org/XXXX)
-- [Janick Mathys](@[orcid](https://orcid.org/XXXX)
+- [Bruna Piereck](@[orcid](https://orcid.org/XXXX))
+- [Janick Mathys](@[orcid](https://orcid.org/XXXX))
 
 Contributors
 
@@ -169,20 +171,29 @@ Please cite as:
 
 # Chapters List
 
-Material for the HPC training for bioimaging analysis.
+Material for the HPC training.
 
-## [Introduction](chapters/session0.md)
+## [Lesson Overview](chapters/01_LessonOverview.md)
 
-## [HPC Infrastructure overview](chapters/session1.md)
 
-## [BAND introduction](chapters/session2.md)
+<preview-lia src="https://raw.githubusercontent.com/vib-tcp/introduction_2_HPC/refs/heads/main/chapters/01_LessonOverview.md">
+</preview-lia>
 
-## [Software modules](chapters/software.md)
+[preview-lia](https://raw.githubusercontent.com/vib-tcp/introduction_2_HPC/refs/heads/main/chapters/01_LessonOverview.md)
 
-## [Data transfer with Globus](chapters/session3.md)
+## [Course preparation](chapters/02_GetReady4course.md)
 
-## [Jupyter Notebooks](chapters/session6_jupyter_notebook.md)
+## [HPC Infrastructure](chapters/03_Infrastructure.md)
 
+## [Connecting to HPCs](chapters/04_connecting_2_resources.md)
+
+## [Transferring Data](chapters/05_data_transfer.md)
+
+## [Software on HPCs](chapters/06_software.md)
+
+## [Jupyter Notebooks](chapters/07_jupyter_notebook.md)
+
+## [VIB Data Core Compute](chapters/vib_compute.md)
 
 
 
@@ -197,7 +208,7 @@ Material for the HPC training for bioimaging analysis.
   },
   "description": "Introduction to HPC is a hands-on course aiming to introduce you to the best practices and how to use of the Flemish Supercomputer use, at the same time enabling you to easily adapt to any HPC you may need access.",
   "keywords": "HPC, Data Analysis, OPEN, Bioinformatics",
-  "name": "Introduction to HPCC",
+  "name": "Introduction to HPC",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "educationalLevel": "beginner",
   "competencyRequired": "none",
@@ -230,3 +241,6 @@ Material for the HPC training for bioimaging analysis.
   ]
 }
 ```
+
+  </body>
+</html>
