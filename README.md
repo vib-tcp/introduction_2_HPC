@@ -167,7 +167,9 @@ Please cite as:
 
 Material for the HPC training.
 
-## [Lesson Overview](https://raw.githubusercontent.com/vib-tcp/introduction_2_HPC/refs/heads/main/chapters/01_LessonOverview.md)
+## [Lesson Overview](chapters/01_LessonOverview.md)
+
+[preview-lia](https://raw.githubusercontent.com/vib-tcp/introduction_2_HPC/refs/heads/main/chapters/01_LessonOverview.md)
 
 ## [Course preparation](chapters/02_GetReady4course.md)
 
