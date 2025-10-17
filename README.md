@@ -154,8 +154,8 @@ Half day Schedule:
 
 Authors
 
-- [Bruna Piereck](@[orcid](https://orcid.org/XXXX)
-- [Janick Mathys](@[orcid](https://orcid.org/XXXX)
+- [Bruna Piereck](@[orcid](https://orcid.org/XXXX))
+- [Janick Mathys](@[orcid](https://orcid.org/XXXX))
 
 Contributors
 
@@ -169,20 +169,23 @@ Please cite as:
 
 # Chapters List
 
-Material for the HPC training for bioimaging analysis.
+Material for the HPC training.
 
-## [Introduction](chapters/session0.md)
+## [Lesson Overview](chapters/01_LessonOverview.md)
 
-## [HPC Infrastructure overview](chapters/session1.md)
+## [Course preparation](chapters/02_GetReady4course.md)
 
-## [BAND introduction](chapters/session2.md)
+## [HPC Infrastructure](chapters/03_Infrastructure.md)
 
-## [Software modules](chapters/software.md)
+## [Connecting to HPCs](chapters/04_connecting_2_resources.md)
 
-## [Data transfer with Globus](chapters/session3.md)
+## [Transferring Data](chapters/05_data_transfer.md)
 
-## [Jupyter Notebooks](chapters/session6_jupyter_notebook.md)
+## [Software on HPCs](chapters/06_software.md)
 
+## [Jupyter Notebooks](chapters/07_jupyter_notebook.md)
+
+## [VIB Data Core Compute](chapters/vib_compute.md)
 
 
 
@@ -197,7 +200,7 @@ Material for the HPC training for bioimaging analysis.
   },
   "description": "Introduction to HPC is a hands-on course aiming to introduce you to the best practices and how to use of the Flemish Supercomputer use, at the same time enabling you to easily adapt to any HPC you may need access.",
   "keywords": "HPC, Data Analysis, OPEN, Bioinformatics",
-  "name": "Introduction to HPCC",
+  "name": "Introduction to HPC",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "educationalLevel": "beginner",
   "competencyRequired": "none",
