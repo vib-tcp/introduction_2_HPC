@@ -54,10 +54,6 @@ orcid:    [@0](@1)<!--class="orcid-logo-for-author-list"
 
 <section>
 
-Hello and welcome to our VIB workshop! We are very happy to have you here.
-
-This is the 2nd edition of this workshop.
-
 > We are using the interactive Open Educational Resource online/offline course infrastructure called LiaScript.
 > It is a distributed way of creating and sharing educational content hosted on github.
 > To see this document as an interactive LiaScript rendered version, click on the
@@ -65,11 +61,11 @@ This is the 2nd edition of this workshop.
 
 ## General context
 
-Welcome to our **Introduction to HPC** workshop! We are very happy to have you here.
+Welcome to our **Introduction to HPC** VIB workshop! We are very happy to have you here.
 
 This is the 2nd edition of this workshop
 
-The half day session aims to introduce the different options available withing the Flemish system, while enabling studnets to quicl adapt to any HPC system they migh access around the globe. With some best practices and differences and similarities within each system.
+The half day session aims to introduce the different options available withing the Flemish system, while enabling students to quickly adapt to any HPC system they might access around the globe. With some best practices and differences and similarities within each system.
 
 The **presentation** which goes alongside this material can be found [here](https://docs.google.com/presentation/d/1J6qROZ35JVeKpVx8TAjWNtbsjescx95ZtqbBCV8vYrg/edit?usp=sharing).
 
@@ -77,12 +73,12 @@ The **presentation** which goes alongside this material can be found [here](http
 
 Half day Schedule:
 
-- 9:00 - 09:30 - Introduction
-- 09:30 - 10:30 - Accessing in the terminal and ondemand
-- 10:30 - 10:45 - Coffee Break
-- 10:45 - 11:30 - Interactive sessions (debug and testing)
-- 11:30 - 12:00 - Querying and using modules in the HPC
-- 12:00 - 12:30 - Submitting and managing jobs
+- 13:00 - 13:30 - Introduction
+- 13:30 - 15:00 - Accessing in the terminal and OnDemand
+- 15:00 - 15:15 - Coffee Break
+- 15:15 - 16:00 - Interactive sessions (debug and testing)
+- 16:00 - 16:30 - Querying and using modules in the HPC
+- 16:30 - 17:00 - Submitting and managing jobs
 
 </section>
 
@@ -171,7 +167,7 @@ Please cite as:
 
 Material for the HPC training.
 
-## [Lesson Overview](chapters/01_LessonOverview.md)
+## [Lesson Overview](https://raw.githubusercontent.com/vib-tcp/introduction_2_HPC/refs/heads/main/chapters/01_LessonOverview.md)
 
 ## [Course preparation](chapters/02_GetReady4course.md)
 
