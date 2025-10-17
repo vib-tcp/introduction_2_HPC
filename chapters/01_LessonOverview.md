@@ -35,8 +35,8 @@ link:     https://raw.githubusercontent.com/vibbits/material-liascript/master/vi
 **This material is derived from ["HPC training Bio-imaging"](https://liascript.github.io/course/?https://raw.githubusercontent.com/vib-bic-training/HPC_training_bioimaging_1/refs/heads/main/README.md#1)**
 ========================================================================================
 
-> This materia is a distributed way of creating and sharing educational content hosted on github.
-> To see this document as an interactive LiaScript rendered version, click on the
+> This material is a distributed way of creating and sharing educational content hosted on github.
+> To see this document as an interactive LiaScript rendered version (WIP), click on the
 > following link/badge:
 >
 > [![LiaScript](https://raw.githubusercontent.com/LiaScript/LiaScript/master/badges/course.svg)](https://liascript.github.io/course/?link)
@@ -123,12 +123,13 @@ Please cite as:
 
 ## Schedule
 
-Schedule day 1:
+Half day Schedule:
 
-| Time | Session |
-|  --- |   ---   |
-| 09:00 - 10:45 | First part  |
-| 10:45 - 11:00 | break       |
-| 11:00 - 12:30 | Second part |
+- 13:00 - 13:30 - Introduction
+- 13:30 - 15:00 - Accessing in the terminal and OnDemand
+- 15:00 - 15:15 - Coffee Break
+- 15:15 - 16:00 - Interactive sessions (debug and testing)
+- 16:00 - 16:30 - Querying and using modules in the HPC
+- 16:30 - 17:00 - Submitting and managing jobs
 
 </section>
