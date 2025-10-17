@@ -176,7 +176,7 @@ Material for the HPC training.
 ## [Lesson Overview](chapters/01_LessonOverview.md)
 
 
-<preview-lia src="https://raw.githubusercontent.com/liaScript/docs/master/README.md">
+<preview-lia src="https://raw.githubusercontent.com/vib-tcp/introduction_2_HPC/refs/heads/main/chapters/01_LessonOverview.md">
 </preview-lia>
 
 [preview-lia](https://raw.githubusercontent.com/vib-tcp/introduction_2_HPC/refs/heads/main/chapters/01_LessonOverview.md)
