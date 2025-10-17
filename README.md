@@ -46,6 +46,12 @@ edition:  2nd
 orcid:    [@0](@1)<!--class="orcid-logo-for-author-list"
 -->
 
+<html>
+  <head>
+    <script type="text/javascript" src="https://liascript.github.io/course/preview-lia.js"></script>
+  </head>
+  <body>
+
 # Introduction to HPC
 
 > This material is inspired and using extracs from [**"HCP Training Bio-imaging"**](https://github.com/vib-bic-training/HPC_training_bioimaging_1), by Benjamin Pavie and Tatiana Woller. Use was authorized.
@@ -169,6 +175,10 @@ Material for the HPC training.
 
 ## [Lesson Overview](chapters/01_LessonOverview.md)
 
+
+<preview-lia src="https://raw.githubusercontent.com/liaScript/docs/master/README.md">
+</preview-lia>
+
 [preview-lia](https://raw.githubusercontent.com/vib-tcp/introduction_2_HPC/refs/heads/main/chapters/01_LessonOverview.md)
 
 ## [Course preparation](chapters/02_GetReady4course.md)
@@ -231,3 +241,6 @@ Material for the HPC training.
   ]
 }
 ```
+
+  </body>
+</html>
