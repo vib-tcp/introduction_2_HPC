@@ -45,8 +45,7 @@ For the case of using OnDemand you don't need an SSH-key, however to access from
 
 Once you are logged in on one of the HPC instances using OnDemand you can find a list of interactive apps that can include Jupyter notebook, RStudio, VSCode Tunnel among others. 
 
-MISSING IMAGE
-<center><img src="../images/...." width="500"/></center>
+<center><img src="../images/KULeuven_ondemand.png" width="500"/></center>
 
 You will also find a shortcut for their terminal cluster. You can open the terminal in your home directory (also known as `$HOME` or `~`) or request an interactive session in one specific node that contains the resources you need. Before we get into this level, let's see how we can connect to OnDemand.
 
@@ -113,7 +112,7 @@ For Windows system you have two ways to do it.
 On MAC and Linux, using OpenSSH
 -------------------------------
  
- First check if you alredy have a key
+ First check if you already have a key
 
  ```
  $ ls ~/.ssh
